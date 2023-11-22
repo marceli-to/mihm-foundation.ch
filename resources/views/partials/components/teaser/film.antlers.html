@@ -1,0 +1,14 @@
+<figure class="mx-auto w-[300px] mb-48">
+  <img 
+    src="{{ glide:image preset='md' }}" 
+    alt="{{ title }}" 
+    title="{{ title }}" 
+    height="{{ image:height }}" 
+    width="{{ image:width }}"
+    class="w-full h-auto"
+    loading="lazy">
+  <figcaption class="text-center mt-12">
+    <h2 class="mb-2">{{ title }}</h2>
+    {{ partial:components/links/page :url="link" text='zum Film' class="font-bold !mb-0" }}
+  </figcaption>
+</figure>

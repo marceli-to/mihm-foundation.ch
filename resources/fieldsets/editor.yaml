@@ -1,0 +1,122 @@
+title: Editor
+fields:
+  -
+    handle: content
+    field:
+      buttons:
+        - h1
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - removeformat
+        - anchor
+        - lead
+      smart_typography: false
+      save_html: false
+      inline: false
+      toolbar_mode: fixed
+      reading_time: false
+      word_count: false
+      fullscreen: true
+      allow_source: true
+      enable_input_rules: true
+      enable_paste_rules: true
+      remove_empty_nodes: false
+      antlers: false
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      always_show_set_button: false
+      collapse: false
+      previews: true
+      type: bard
+      display: Content
+      icon: bard
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      sets:
+        elements:
+          display: Elemente
+          instructions: null
+          icon: programming-module-box-cube
+          sets:
+            link_page:
+              display: Seitenlink
+              instructions: 'Link auf eine interne oder externe Seite'
+              icon: link
+              fields:
+                -
+                  import: link_page
+            link_download:
+              display: Downloadlink
+              instructions: 'Link auf eine Datei'
+              icon: link
+              fields:
+                -
+                  import: link_download
+            link_external:
+              display: 'Externer Link'
+              instructions: 'Link auf ein externes Ziel'
+              icon: link-external
+              fields:
+                -
+                  import: link_external
+            image:
+              display: Bild
+              instructions: 'Einzelnes Bild hinzufügen'
+              icon: media-image-picture-orientation
+              fields:
+                -
+                  import: image
+            image_gallery:
+              display: Bildergalerie
+              instructions: 'Bildergalerie für mehrere Bilder hinzufügen'
+              icon: media-image-picture-gallery
+              fields:
+                -
+                  import: image_gallery
+            video_embed:
+              display: 'Video Embed'
+              instructions: 'Video Embed Code'
+              icon: social-vimeo
+              fields:
+                -
+                  import: video_embed
+        special_elements:
+          display: 'Special Elements'
+          instructions: null
+          icon: favorite-star
+          sets:
+            film_teaser:
+              display: 'Film teaser'
+              instructions: null
+              icon: media-webcam-video
+              fields:
+                -
+                  import: film_teaser
+            project_previews:
+              display: 'Projekt Vorschau'
+              instructions: 'Auswahl von Projekten hinzufügen'
+              icon: file-content-list
+              fields:
+                -
+                  import: project_previews
+            supported_projects:
+              display: 'Unterstützte Projekte'
+              instructions: 'Unterstützte Projekte hinzufügen'
+              icon: form-drop-down-menu
+              fields:
+                -
+                  import: supported_projects
+            anchor:
+              display: Anchor
+              instructions: 'Anker / Scrollziel hinzufügen'
+              icon: link
+              fields:
+                -
+                  import: anchor

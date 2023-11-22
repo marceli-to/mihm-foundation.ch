@@ -1,0 +1,118 @@
+title: Page
+tabs:
+  main:
+    display: Inhalt
+    sections:
+      -
+        display: Inhalt
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              validate:
+                - required
+              display: Titel
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+  media:
+    display: Medien
+    sections:
+      -
+        display: Medien
+  seo:
+    display: SEO
+    sections:
+      -
+        display: SEO
+        fields:
+          -
+            handle: open_graph_title
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Titel
+              icon: text
+              instructions: 'Kann als Ersatz für den Seitentitel verwendet werden'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: open_graph_description
+            field:
+              antlers: false
+              type: textarea
+              display: Beschreibung
+              icon: textarea
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              instructions: 'Ein bis zwei beschreibende Sätze über den Inhalt der Seite.'
+          -
+            handle: open_graph_image
+            field:
+              max_files: 1
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Bild
+              icon: assets
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              folder: images
+              instructions: 'Beim Sharing auf Social Media verwendetes Bild'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+          -
+            handle: layout
+            field:
+              hide_partials: true
+              blueprint: false
+              type: template
+              display: Layout
+              icon: template
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

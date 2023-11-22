@@ -1,0 +1,23 @@
+{{ if is_homepage }}
+
+  {{ partial:menu/main/wrapper }}
+
+  <main class="flex-1 {{ page_class ? page_class : ''}}">
+    {{ slot }}
+  </main>
+
+{{ else }}
+
+  {{ if hero_image }}
+
+    {{ partial:components/hero/wrapper }}
+
+  {{ /if }}
+
+  {{ partial:menu/main/wrapper }}
+  
+  <main class="flex-1 xl:-mt-30 {{ page_class ? page_class : ''}}">
+    {{ slot }}
+  </main>
+
+{{ /if }}

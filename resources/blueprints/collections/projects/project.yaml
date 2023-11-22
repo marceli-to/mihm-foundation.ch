@@ -1,0 +1,231 @@
+tabs:
+  main:
+    display: Inhalt
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              validate:
+                - required
+              display: Titel
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            import: editor
+  teaser:
+    display: Teaser
+    sections:
+      -
+        display: Teaser
+        fields:
+          -
+            handle: quote
+            field:
+              antlers: false
+              type: textarea
+              display: Zitat
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: author_name
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Autor
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: author_position
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Funktion
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  media:
+    display: Medien
+    sections:
+      -
+        display: Medien
+        fields:
+          -
+            handle: image
+            field:
+              max_files: 1
+              min_files: 1
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Bild
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: video_url
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Video URL'
+              icon: text
+              instructions: 'Video URL (z.B. https://vimeo.com/604646233)'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: video_poster
+            field:
+              max_files: 1
+              min_files: 1
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Video Poster'
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  seo:
+    display: SEO
+    sections:
+      -
+        display: SEO
+        fields:
+          -
+            handle: open_graph_title
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Titel
+              icon: text
+              instructions: 'Kann als Ersatz für den Seitentitel verwendet werden'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: open_graph_description
+            field:
+              antlers: false
+              type: textarea
+              display: Beschreibung
+              icon: textarea
+              instructions: 'Ein bis zwei beschreibende Sätze über das Projekt.'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: open_graph_image
+            field:
+              max_files: 1
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Bild
+              icon: assets
+              instructions: 'Beim Sharing auf Social Media verwendetes Bild'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - projects
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: type
+            field:
+              options:
+                aktuelle-foerderprojekte: 'Aktuelle Förderprojekte'
+                partnerschaften: Partnerschaften
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              default: project
+              type: select
+              display: Kategorie
+              icon: select
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: template
+            field:
+              hide_partials: true
+              blueprint: false
+              folder: partials/projects
+              type: template
+              display: Template
+              icon: template
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+title: Projekte

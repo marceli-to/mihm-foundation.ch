@@ -1,0 +1,14 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "typo/webfonts.css";
+
+@import "components/collapsible.css";
+@import "components/headings.css";
+
+body {
+  @apply antialiased;
+}
+
+
+[x-cloak] { display: none !important; }
