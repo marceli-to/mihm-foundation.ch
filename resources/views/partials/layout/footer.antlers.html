@@ -1,3 +1,13 @@
-<footer>
-
+<footer class="border-t border-white py-24 xl:py-32">
+  {{ partial:layout/section }}
+    <div class="sm:grid sm:grid-cols-12 sm:items-center">
+      <address class="not-italic sm:col-span-8 xl:col-span-9">
+        Otto Mihm Stiftung Strasse<br>0000 Ort<br>Tel +41 00 000 000<br>mail@mihmfoundation.ch
+      </address>
+      <div class="sm:col-span-4 sm:flex sm:justify-between sm:items-center xl:col-span-3">
+        <div>[Logo]</div>
+        {{ partial:components/socials }}
+      </div>
+    </div>
+  {{ /partial:layout/section }}
 </footer>

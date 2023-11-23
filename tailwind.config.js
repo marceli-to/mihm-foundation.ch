@@ -15,11 +15,11 @@ export default {
     extend: {
 
       maxWidth: {
-        'page': '1290px',
+        'page': '1200px',
       },
 
       fontFamily: {
-        'neuzeit': ['neuzeit-grotesk', ...defaultTheme.fontFamily.sans],
+        'gteesti': ['GTEestiProDisplay-Regular', ...defaultTheme.fontFamily.sans],
       },
 
       fontSize: {
@@ -37,9 +37,10 @@ export default {
       },
 
       colors: {
-        'sky': '#E5EFF6',
-        'aqua': '#8cafcb',
-        'steel': '#818084',
+        'olive': '#4B6E5A',
+        'burgundy': '#8A404F',
+        'terracotta': '#C77149',
+        'rose': '#D3A6B0'
       },
 
       screens: {
