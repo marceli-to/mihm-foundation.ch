@@ -1,8 +1,20 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-67ee7455.css",
+    "file": "assets/app-ba69b608.css",
     "isEntry": true,
     "src": "resources/css/app.css"
+  },
+  "resources/css/fonts/GTEestiProText-Regular.eot": {
+    "file": "assets/GTEestiProText-Regular-05fe819f.eot",
+    "src": "resources/css/fonts/GTEestiProText-Regular.eot"
+  },
+  "resources/css/fonts/GTEestiProText-Regular.woff": {
+    "file": "assets/GTEestiProText-Regular-42b9d443.woff",
+    "src": "resources/css/fonts/GTEestiProText-Regular.woff"
+  },
+  "resources/css/fonts/GTEestiProText-Regular.woff2": {
+    "file": "assets/GTEestiProText-Regular-5e0fbc3f.woff2",
+    "src": "resources/css/fonts/GTEestiProText-Regular.woff2"
   },
   "resources/js/app.js": {
     "file": "assets/app-e7c4ffc0.js",
