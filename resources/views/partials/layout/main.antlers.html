@@ -1,23 +1,7 @@
-{{ if is_homepage }}
-
-
-  <main class="flex-1 {{ page_class ? page_class : ''}}">
-    <p>Die Mihm Foundation engagiert sich für das Wohl der Menschen. Im Kleinen genauso wie im ganz Grossen.</p>
+<main class="flex-1 pt-50 lg:pt-70 xl:pt-90 {{ page_class ? page_class : ''}}">
+  {{ partial:layout/inner }}
+    <p class="text-[30px] md:text-[45px] lg:text-[60px] xl:text-[75px] leading-[1.2]">Die Mihm Foundation engagiert sich für das Wohl der Menschen. Im Kleinen genauso wie im ganz Grossen.</p>
     {{ slot }}
-  </main>
+  {{ /partial:layout/inner }}
 
-{{ else }}
-
-  {{ if hero_image }}
-
-    {{ partial:components/hero/wrapper }}
-
-  {{ /if }}
-
-  {{ partial:menu/main/wrapper }}
-  
-  <main class="flex-1 xl:-mt-30 {{ page_class ? page_class : ''}}">
-    {{ slot }}
-  </main>
-
-{{ /if }}
+</main>

@@ -1,19 +1,27 @@
-<nav>
-  <ul class="flex items-end">
-    <li>
-      <a href="https://facebook.com" title="Visit us on Facebook" class="flex items-center justify-center w-auto p-6 hover:text-rose transition-colors">
-        {{ partial:icons/facebook class="block w-auto h-22" }}
-      </a>
-    </li>
-    <li>
-      <a href="https://instagram.com" title="Visit us on Instagram" class="flex items-center justify-center w-auto p-6 hover:text-rose transition-colors">
-        {{ partial:icons/instagram class="block w-auto h-21" }}
-      </a>
-    </li>
-    <li>
-      <a href="https://linkedin.com" title="Visit us on LinkedIn" class="flex items-center justify-center w-auto p-6 hover:text-rose transition-colors">
-        {{ partial:icons/linkedin class="block w-auto h-21" }}
-      </a>
-    </li>
-  </ul>
-</nav>
+{{ if social_media_accounts:publish }}
+  <nav class="{{ class }}">
+    <ul class="flex items-end">
+      {{ if social_media_accounts:facebook }}
+        <li>
+          <a href="{{ social_media_accounts:facebook }}" title="Visit us on Facebook" class="flex items-center justify-center w-auto p-5 lg:p-7 {{ hover ?? 'hover:text-rose' }} transition-colors">
+            {{ partial:icons/facebook class="block w-auto h-22" }}
+          </a>
+        </li>
+      {{ /if }}
+      {{ if social_media_accounts:instagram }}
+        <li>
+          <a href="{{ social_media_accounts:instagram }}" title="Visit us on Instagram" class="flex items-center justify-center w-auto p-5 lg:p-7 {{ hover ?? 'hover:text-rose' }} transition-colors">
+            {{ partial:icons/instagram class="block w-auto h-21" }}
+          </a>
+        </li>
+      {{ /if }}
+      {{ if social_media_accounts:linkedin }}
+        <li>
+          <a href="{{ social_media_accounts:linkedin }}" title="Visit us on LinkedIn" class="flex items-center justify-center w-auto p-5 lg:p-7 {{ hover ?? 'hover:text-rose' }} transition-colors">
+            {{ partial:icons/linkedin class="block w-auto h-21" }}
+          </a>
+        </li>
+      {{ /if }}
+    </ul>
+  </nav>
+{{ /if }}

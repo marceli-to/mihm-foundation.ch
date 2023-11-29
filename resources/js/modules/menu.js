@@ -7,8 +7,8 @@
   const treshold = 400;
 
   const init = () => {
-    handleScroll();
-    window.addEventListener('scroll', debounce(handleScroll, 100));
+    // handleScroll();
+    // window.addEventListener('scroll', debounce(handleScroll, 100));
   };
   
   const handleScroll = () => {

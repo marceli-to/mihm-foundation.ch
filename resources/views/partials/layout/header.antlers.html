@@ -1,28 +1,21 @@
-<header>
-  <div class="flex items-center justify-center relative h-130">
+<header class="lg:py-20 xl:py-30">
+  {{ partial:layout/inner class="min-h-[80px] md:min-h-[100px] relative flex justify-between lg:justify-start items-center lg:items-end py-20" }}
 
-    <a href="/" title="Startseite Mihm Foundation">
-      [Logo]
+    <a href="/" title="Startseite {{ config:app:name }}">
+      {{ partial:icons/logo class="w-160 md:w-[200px] lg:w-[280px] xl:w-[390px] h-auto" theme="{{ logo_theme ?? 'white' }}" }}
     </a>
 
     <a 
       href="javascript:;" 
       x-on:click="menu = ! menu" 
       title="Menü anzeigen" 
-      class="absolute h-130 top-0 right-0 px-30 flex justify-center items-center xl:hidden">
-      {{ partial:icons/burger class="w-24 h-auto" }}
+      class="lg:hidden">
+      {{ partial:icons/burger class="w-32 h-auto text-white" }}
     </a>
 
-    <a 
-      href="javascript:;" 
-      x-on:click="menu = ! menu" 
-      title="Menü anzeigen" 
-      class="fixed h-50 w-50 top-40 right-16 rounded-full z-[40] bg-black hidden justify-center items-center"
-      data-sticky-menu-btn>
-      {{ partial:icons/burger class="w-24 h-auto" }}
-    </a>
     {{ partial:menu/main/wrapper }}
 
     {{ partial:menu/overlay/wrapper }}
-  </div>
+
+  {{ /partial:layout/inner }}
 </header>

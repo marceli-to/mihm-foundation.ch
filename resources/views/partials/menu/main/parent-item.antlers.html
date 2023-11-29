@@ -1,12 +1,12 @@
-<li class="mt-16">
+<li class="mt-15 lg:mt-0 leading-none">
   <a 
     href="{{ url }}" 
-    class="text-1xl no-underline relative hover:underline underline-offset-[19px] decoration-1 {{ is_current || is_parent ? '!underline' : '' }}"
+    class="no-underline relative hover:underline underline-offset-[20px] lg:underline-offset-[30px] decoration-1 {{ is_current || is_parent ? 'no-underline' : '' }}"
     title="{{ title }}">
     {{ title }}
   </a>
   {{ if children }}
-    <ul class="{{ is_current || is_parent ? 'block' : 'hidden'}} absolute mt-26">
+    <ul class="{{ is_current || is_parent ? 'flex justify-between lg:gap-x-10 xl:gap-x-20' : 'hidden' }} absolute w-full left-0">
       {{ children }}
         {{ partial:menu/main/child-item }}
       {{ /children }}

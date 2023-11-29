@@ -15,11 +15,17 @@ export default {
     extend: {
 
       maxWidth: {
-        'page': '1200px',
+        'page': '1260px',
+      },
+      
+      screens: {
+        'xs': '450px',
+        'xl': '1440px',
+        '2xl': '1600px',
       },
 
       fontFamily: {
-        'gteesti': ['GTEestiProDisplay-Regular', ...defaultTheme.fontFamily.sans],
+        'gteesti': ['GTEestiProText-Regular', ...defaultTheme.fontFamily.sans],
       },
 
       fontSize: {
@@ -41,11 +47,6 @@ export default {
         'burgundy': '#8A404F',
         'terracotta': '#C77149',
         'rose': '#D3A6B0'
-      },
-
-      screens: {
-        'xs': '450px',
-        'xl': '1200px',
       },
     },
 

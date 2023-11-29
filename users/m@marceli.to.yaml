@@ -5,8 +5,6 @@ password_hash: $2y$10$5RZvaNEWBY4aaxrgE/iukeK5HIEaOYEzMp9Lf7E/vOu2wR/65mGwa
 preferences:
   locale: en
   collections:
-    pages:
-      after_save: continue_editing
     realestate:
       columns:
         - zone
