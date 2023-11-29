@@ -15,12 +15,12 @@ export default {
     extend: {
 
       maxWidth: {
-        'page': '1260px',
+        'page': '1340px',
       },
       
       screens: {
         'xs': '450px',
-        'xl': '1440px',
+        'xl': '1360px',
         '2xl': '1600px',
       },
 

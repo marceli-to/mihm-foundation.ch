@@ -1,12 +1,13 @@
 <li class="mt-15 lg:mt-0 leading-none">
   <a 
     href="{{ url }}" 
-    class="no-underline relative hover:underline underline-offset-[20px] lg:underline-offset-[30px] decoration-1 {{ is_current || is_parent ? 'no-underline' : '' }}"
-    title="{{ title }}">
+    class="lg:px-15 xl:px-25 no-underline relative hover:underline underline-offset-[20px] lg:underline-offset-[30px] decoration-1 {{ is_current && children ? '!no-underline' : '' }} {{ is_current && !children ? '!underline' : '' }}"
+    title="{{ title }}"
+    data-menu-parent>
     {{ title }}
   </a>
-  {{ if children }}
-    <ul class="{{ is_current || is_parent ? 'flex justify-between lg:gap-x-10 xl:gap-x-20' : 'hidden' }} absolute w-full left-0">
+  {{ if children && (is_current || is_parent) }}
+    <ul class="{{ is_current || is_parent ? 'flex justify-start lg:gap-x-15 xl:gap-x-30' : 'hidden' }} absolute w-full left-15 xl:left-25">
       {{ children }}
         {{ partial:menu/main/child-item }}
       {{ /children }}

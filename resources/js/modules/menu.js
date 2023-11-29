@@ -1,44 +1,33 @@
 (function () {
 
   const selectors = {
-    btn: '[data-sticky-menu-btn]',
+    menu: '[data-menu]',
+    menuParent: '[data-menu-parent]',
   };
-
-  const treshold = 400;
 
   const init = () => {
-    // handleScroll();
-    // window.addEventListener('scroll', debounce(handleScroll, 100));
-  };
-  
-  const handleScroll = () => {
-    const btn = document.querySelector(selectors.btn);
+    // if a user hovers over a menuParent item, hide all ul uls that are in the menu except for the one that is a sibling of the menuParent item
+    document.querySelectorAll(selectors.menuParent).forEach((menuParent) => {
+      menuParent.addEventListener('mouseenter', (e) => {
+        const menu = e.target.closest(selectors.menu);
+        menu.querySelectorAll('ul ul').forEach((ul) => {
+          ul.classList.add('hidden');
+        });
+        if (menuParent.nextElementSibling) {
+          menuParent.nextElementSibling.classList.remove('hidden');
+        }
+      });
 
-    if (window.scrollY > treshold) {
-      btn.classList.remove('hidden');
-      btn.classList.add('flex');
-    } else {
-      btn.classList.add('hidden');
-      btn.classList.remove('flex');
-    }
-  };
+      // show all ul uls when the user leaves the menu
+      menuParent.addEventListener('mouseleave', (e) => {
+        const menu = e.target.closest(selectors.menu);
+        menu.querySelectorAll('ul ul').forEach((ul) => {
+          ul.classList.remove('hidden');
+        });
+      });
+    });
 
-  const debounce = (func, wait, immediate) => {
-    let timeout;
-    return function () {
-      const context = this,
-        args = arguments;
-      const later = function () {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      };
-      const callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow)
-        func.apply(context, args);
-    };
-  }
+  };
 
   init();
   
