@@ -1,12 +1,12 @@
 <li>
   <a 
     href="{{ url }}" 
-    class="block text-xl py-15 hover:underline underline-offset-[20px] decoration-1 {{ is_current || is_parent ? '!underline' : '' }}"
+    class="block text-xl py-15 hover:underline underline-offset-[20px] decoration-1 {{ is_current || is_parent ? '!underline mb-10' : '' }}"
     title="{{ title }}">
     {{ title }}
   </a>
   {{ if children }}
-    <ul class="mt-15 ml-30">
+    <ul class="ml-30 mb-15">
       {{ children }}
         {{ partial:menu/overlay/child-item }}
       {{ /children }}
