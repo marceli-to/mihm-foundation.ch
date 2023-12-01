@@ -1,12 +1,12 @@
-<details class="border-b border-b-black mb-8 scroll-mt-5 {{ class }}" data-collapsible-item="{{ id }}">
-  <summary class="flex items-center leading-none justify-between cursor-pointer group">
-    <div class="select-none text-left leading-none py-12 text-1xl sm:text-3xl md:text-4xl">
+<details class="mb-20 lg:mb-30 xl:mb-40 scroll-mt-5 {{ class }}" data-collapsible-item="{{ id }}">
+  <summary class="flex items-start sm:items-center justify-between cursor-pointer border-b pb-15 lg:pb-25 xl:pb-35 group">
+    <div class="select-none text-left text-md md:text-lg lg:text-xl xl:text-3xl xl:mt-5">
       {{ slot:header }}
     </div>
-    {{ partial:icons/plus class="close w-18 h-18 sm:w-22 sm:h-22 shrink-0" }}
-    {{ partial:icons/minus class="open w-18 h-18 sm:w-22 sm:h-22 shrink-0" }}
+    {{ partial:icons/arrow-down class="close mt-5" }}
+    {{ partial:icons/rounded-cross class="open mt-5" }}
   </summary>
-  <div class="pt-9 pb-18 {{ innerClass }}">
+  <div class="py-15 lg:py-25 {{ innerClass }}">
     {{ slot:content }}
   </div>
 </details>

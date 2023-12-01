@@ -28,7 +28,36 @@
 
     <div class="mt-60 lg:mt-90">
       {{ partial:layout/label label="H2" }}
-      <h2 class="text-lg md:text-2xl lg:text-4xl xl:text-5xl leading-[1.2] mb-20 md:mb-40 lg:mb-55">Sustainable Development Goals</h2>
+      <h2 class="text-lg md:text-2xl lg:text-4xl xl:text-5xl leading-[1.2] mb-15 md:mb-30 lg:mb-45">Sustainable Development Goals</h2>
+
+      {{ partial:layout/label label="Accordion" }}
+      {{ partial:partials/components/collapsible :id="'1'" }}
+        {{ slot:header }}
+          Was sind die Sustainable Development Goals? 
+        {{ /slot:header}}
+        {{ slot:content }}
+          <p>Lorerovit prate voluptatur aut aut faccum cuptistrum corpos sant alit dolorest ad qui quiatquam volupti aspietum et rem. Namet esedit occus. Ime con recea quibus exerunt volenist ommo dolupta eceperum quasintur mo omnihit, velestenti non ea voluptatur, aut moluptas doluptur? Quiatqu asperati omnis derum voloribusant que consenia imporum ut asim volut et es et oditio. Ut la core sedi dessum aut odicabore, ende nis experch illupid ut abor as qui ullessimi, alit rerionem volorem. Dam voluptatur sit es dolupti si tes ut est as re odis simagnienis as estium si ulpa peditatust lani dollaut prat lis volores ab incitaquis voloritet laciuribus ducidigendi rae. Sam quunto quiduscim hariae venetur a santiunt ab id eum ipidunt id mostiore nullo te autem ad qui aut faceper iamende lenimen istrunt maximagni te offic temquas dia verundus. Ita non praepud ipsam, ilis quist est incte voluptatius vellab into</p>
+        {{ /slot:content }}
+      {{ /partial:partials/components/collapsible }}
+
+      {{ partial:partials/components/collapsible :id="'1'" }}
+        {{ slot:header }}
+          Wie trägt die Schweiz dazu bei?  
+        {{ /slot:header}}
+        {{ slot:content }}
+          <p>Lorerovit prate voluptatur aut aut faccum cuptistrum corpos sant alit dolorest ad qui quiatquam volupti aspietum et rem. Namet esedit occus. Ime con recea quibus exerunt volenist ommo dolupta eceperum quasintur mo omnihit, velestenti non ea voluptatur, aut moluptas doluptur? Quiatqu asperati omnis derum voloribusant que consenia imporum ut asim volut et es et oditio. Ut la core sedi dessum aut odicabore, ende nis experch illupid ut abor as qui ullessimi, alit rerionem volorem. Dam voluptatur sit es dolupti si tes ut est as re odis simagnienis as estium si ulpa peditatust lani dollaut prat lis volores ab incitaquis voloritet laciuribus ducidigendi rae. Sam quunto quiduscim hariae venetur a santiunt ab id eum ipidunt id mostiore nullo te autem ad qui aut faceper iamende lenimen istrunt maximagni te offic temquas dia verundus. Ita non praepud ipsam, ilis quist est incte voluptatius vellab into</p>
+        {{ /slot:content }}
+      {{ /partial:partials/components/collapsible }}
+
+      {{ partial:partials/components/collapsible :id="'1'" }}
+        {{ slot:header }}
+          Was macht die Stiftung für das Erreichen der Ziele?  
+        {{ /slot:header}}
+        {{ slot:content }}
+          <p>Lorerovit prate voluptatur aut aut faccum cuptistrum corpos sant alit dolorest ad qui quiatquam volupti aspietum et rem. Namet esedit occus. Ime con recea quibus exerunt volenist ommo dolupta eceperum quasintur mo omnihit, velestenti non ea voluptatur, aut moluptas doluptur? Quiatqu asperati omnis derum voloribusant que consenia imporum ut asim volut et es et oditio. Ut la core sedi dessum aut odicabore, ende nis experch illupid ut abor as qui ullessimi, alit rerionem volorem. Dam voluptatur sit es dolupti si tes ut est as re odis simagnienis as estium si ulpa peditatust lani dollaut prat lis volores ab incitaquis voloritet laciuribus ducidigendi rae. Sam quunto quiduscim hariae venetur a santiunt ab id eum ipidunt id mostiore nullo te autem ad qui aut faceper iamende lenimen istrunt maximagni te offic temquas dia verundus. Ita non praepud ipsam, ilis quist est incte voluptatius vellab into</p>
+        {{ /slot:content }}
+      {{ /partial:partials/components/collapsible }}
+
     </div>
 
     {{ slot }}
