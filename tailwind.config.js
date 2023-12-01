@@ -29,17 +29,18 @@ export default {
       },
 
       fontSize: {
-        'xxs': '0.75rem',   // 12px
-        'xs': '0.875rem',   // 14px
-        'sm': '1.0rem',     // 16px 
-        'md': '1.125rem',   // 18px
-        'lg': '1.25rem',    // 20px
-        'xl': '1.5rem',     // 24px
-        '1xl': '1.563rem',    // 25px
-        '2xl': '1.875rem',  // 30px
-        '3xl': '2.0rem',    // 32px
-        '4xl': '2.25rem',   // 36px
-        '5xl': '2.5rem',    // 40px
+        'xxs': '0.875rem',  // 14px
+        'xs': '1rem',       // 16px
+        'sm': '1.125rem',   // 18px
+        'base': '1.25rem',  // 20px
+        'md': '1.5rem',     // 24px
+        'lg': '1.875rem',   // 30px
+        'xl': '2.1875rem',  // 35px
+        '2xl': '2.5rem',    // 40px
+        '3xl': '2.8125rem', // 45px
+        '4xl': '3.125rem',  // 50px
+        '5xl': '3.75rem',   // 60px
+        '6xl': '4.6875rem', // 75px
       },
 
       colors: {
