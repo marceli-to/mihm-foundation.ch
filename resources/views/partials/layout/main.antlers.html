@@ -1,10 +1,21 @@
-<main class="flex-1 pt-50 lg:pt-70 xl:pt-90 {{ page_class ? page_class : ''}}">
+<main class="flex-1 pt-50 pb-30 xl:py-90 {{ page_class ? page_class : ''}}">
   {{ partial:layout/inner }}
     <div>
       {{ partial:layout/label label="Claim" }}
       <p class="text-xl md:text-3xl lg:text-5xl xl:text-6xl leading-[1.2]">Die Mihm Foundation engagiert sich für das Wohl der Menschen. Im Kleinen genauso wie im ganz Grossen.</p>
     </div>
-    <div class="mt-60">
+
+    <div class="mt-90 xl:mt-120">
+      {{ partial:layout/label label="Teaser Förderprojekte" class="!mb-10" }}
+      {{ partial:components/project/teasers }}
+        {{ partial:components/project/teaser theme="olive" title="Gesundheit" text="Förderung von Innovatoren und Pionieren im Bereich Gesundheit." }}
+        {{ partial:components/project/teaser theme="burgundy" title="Bildung" text="Unterstützung beim lebenslangen Lernen und dem Einstieg ins Berufsleben." }}
+        {{ partial:components/project/teaser theme="terracotta" title="Sensebezirk" text="Engagement für die kulturelle und soziale Entwicklung der Region Schwarzsee." }}
+      {{ /partial:components/project/teasers }}
+    </div>
+
+
+    <div class="mt-90">
       {{ partial:layout/label label="H1" }}
       <h1 class="text-xl md:text-3xl lg:text-5xl xl:text-6xl leading-[1.2] mb-20 md:mb-40 lg:mb-55">Mission</h1>
 
@@ -12,8 +23,14 @@
       <p class="text-lg md:text-2xl lg:text-3xl xl:text-5xl leading-[1.15]">Lead Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius exercitationem ullam possimus harum, sit eaque itaque eligendi.</p>
       
       {{ partial:layout/label label="Lauftext" }}
-      <p class="text-sm md:text-base lg:text-md xl:text-lg leading-[1.25]">Die Mihm Foundation ermöglicht und fördert Projekte, die Wirkungen im Bereich der Development Goals (SDGs) entfalten. Es ist die Ambition der Stiftung einzig Projekte zu fördern, welche einen Beitrag zur Zielerreichung der nachhaltigen Entwicklung Gesundheit und Wohlergehen (SDG 3), hochkarätige Bildung (SDG 4) sowie lokale und nachhaltige Tourismusförderung (SDG 8.9) leisten. Garantiert wird dies mit der Selektion der Förderprojekte durch ein kompetentes, unabhängiges und professionelles Adviso-ry Board. Die Mihm Foundation dokumentiert alle Förderprojekte auf der Webseite und das Advisory Board misst deren Wirkung anhand der offiziellen Indikatoren der SDGs. So wird nicht nur die Wirkung eines jeden Projektes verstärkt, sondern auch das Wirken der Mihm Foundation - Im Kleinen genauso wie im ganz Grossen.<br>Die Stiftung ist politisch und konfessionell neutral und frei von jeglichen kommerziellen Interes-sen. Die Tätigkeiten der Stiftung sind stets impactorientiert, die im Sinn des Stiftungszwecks erfolgen.</p>
+      <p class="">Die Mihm Foundation ermöglicht und fördert Projekte, die Wirkungen im Bereich der Development Goals (SDGs) entfalten. Es ist die Ambition der Stiftung einzig Projekte zu fördern, welche einen Beitrag zur Zielerreichung der nachhaltigen Entwicklung Gesundheit und Wohlergehen (SDG 3), hochkarätige Bildung (SDG 4) sowie lokale und nachhaltige Tourismusförderung (SDG 8.9) leisten. Garantiert wird dies mit der Selektion der Förderprojekte durch ein kompetentes, unabhängiges und professionelles Adviso-ry Board. Die Mihm Foundation dokumentiert alle Förderprojekte auf der Webseite und das Advisory Board misst deren Wirkung anhand der offiziellen Indikatoren der SDGs. So wird nicht nur die Wirkung eines jeden Projektes verstärkt, sondern auch das Wirken der Mihm Foundation - Im Kleinen genauso wie im ganz Grossen.<br>Die Stiftung ist politisch und konfessionell neutral und frei von jeglichen kommerziellen Interes-sen. Die Tätigkeiten der Stiftung sind stets impactorientiert, die im Sinn des Stiftungszwecks erfolgen.</p>
     </div>
+
+    <div class="mt-90">
+      {{ partial:layout/label label="H2" }}
+      <h2 class="text-lg md:text-2xl lg:text-4xl xl:text-5xl leading-[1.2] mb-20 md:mb-40 lg:mb-55">Sustainable Development Goals</h2>
+    </div>
+
     {{ slot }}
   {{ /partial:layout/inner }}
 </main>

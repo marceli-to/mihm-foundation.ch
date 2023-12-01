@@ -14,4 +14,16 @@ main p {
   @apply mb-20 md:mb-35 lg:mb-45;
 }
 
+.theme-burgundy {
+  @apply bg-burgundy;
+}
+
+.theme-olive {
+  @apply bg-olive;
+}
+
+.theme-terracotta {
+  @apply bg-terracotta;
+}
+
 [x-cloak] { display: none !important; }
