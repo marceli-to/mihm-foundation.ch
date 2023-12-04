@@ -15,7 +15,7 @@ export default {
     extend: {
 
       maxWidth: {
-        'page': '1340px',
+        'inner': '1340px',
       },
       
       screens: {

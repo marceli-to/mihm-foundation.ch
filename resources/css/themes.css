@@ -1,0 +1,15 @@
+.theme-rose {
+  @apply bg-rose;
+}
+
+.theme-burgundy {
+  @apply bg-burgundy;
+}
+
+.theme-olive {
+  @apply bg-olive;
+}
+
+.theme-terracotta {
+  @apply bg-terracotta;
+}

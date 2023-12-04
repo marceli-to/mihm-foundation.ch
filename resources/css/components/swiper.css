@@ -19,7 +19,7 @@
 
 /* pagination */
 .swiper-pagination {
-  @apply !bottom-auto !top-auto !relative !text-right pt-10 w-full max-w-page mx-auto px-20 lg:px-40
+  @apply !bottom-auto !top-auto !relative !text-right pt-10 w-full max-w-inner mx-auto px-20 lg:px-40
 }
 
 .swiper-pagination .swiper-pagination-bullet {

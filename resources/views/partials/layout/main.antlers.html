@@ -61,11 +61,16 @@
   
   <div class="mt-60 lg:mt-90">
     {{ partial:layout/inner }}
-    {{ partial:layout/label label="H2" }}
-    <h1 class="text-xl md:text-3xl lg:text-5xl xl:text-6xl leading-[1.2] mb-20 md:mb-40 lg:mb-55">Aktuelle Förderprojekte</h1>
-    {{ partial:layout/label label="Slideshow" class="!mb-15" }}
+      {{ partial:layout/label label="H2" }}
+      <h1 class="text-xl md:text-3xl lg:text-5xl xl:text-6xl leading-[1.2] mb-20 md:mb-40 lg:mb-55">Aktuelle Förderprojekte</h1>
+      {{ partial:layout/label label="Slideshow" class="!mb-15" }}
     {{ /partial:layout/inner }}
     {{ partial:components/swiper/index}}
+  </div>
+
+  <div class="mt-60 lg:mt-90">
+    {{ partial:components/cta class="theme-rose" }}
+    {{ /partial:components/cta}}
   </div>
   
 </main>
