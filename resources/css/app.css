@@ -5,6 +5,8 @@
 
 @import "components/collapsible.css";
 @import "components/headings.css";
+@import "components/swiper.css";
+
 
 body {
   @apply antialiased;

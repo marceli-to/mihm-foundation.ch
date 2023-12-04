@@ -4,3 +4,4 @@ window.Alpine = Alpine
 Alpine.start();
 
 import './modules/menu.js';
+import './modules/swiper.js';

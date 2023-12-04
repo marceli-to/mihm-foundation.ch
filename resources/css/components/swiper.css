@@ -1,0 +1,31 @@
+/* container */
+.swiper {
+  @apply w-full h-full
+}
+
+/* slides */
+.swiper-slide {
+  @apply text-left bg-black flex justify-center items-center select-none !h-[320px] md:!h-auto !w-full md:!w-auto
+}
+
+/* slide image */
+.swiper-slide img {
+  @apply !opacity-25 transition-opacity duration-300 ease-in-out block w-full h-full object-cover md:w-auto md:h-[480px] xl:h-[560px]
+}
+
+.swiper-slide-active img {
+  @apply !opacity-100 select-none
+}
+
+/* pagination */
+.swiper-pagination {
+  @apply !bottom-auto !top-auto !relative !text-right pt-10 w-full max-w-page mx-auto px-20 lg:px-40
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  @apply border border-white rounded-full bg-transparent w-12 h-12 lg:w-16 lg:h-16 !opacity-100
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  @apply bg-white
+}
