@@ -1,6 +1,6 @@
 <div 
   x-cloak x-show="menu"  
-  class="bg-olive fixed left-0 top-0 w-full h-full z-40 lg:hidden">
+  class="bg-rose fixed left-0 top-0 w-full h-full z-40 lg:hidden">
   {{ partial:layout/inner class="min-h-[85px] md:min-h-[100px] relative flex justify-between items-center" }}
     <a href="/" title="Startseite {{ config:app:name }}">
       {{ partial:icons/logo class="w-180 md:w-[200px] lg:w-[280px] h-auto" theme="white" }}
@@ -14,13 +14,13 @@
     </a>
   {{ /partial:layout/inner }}
   <div class="px-20 fixed top-80 lg:top-100 right-0 w-full h-[calc(100%_-_85px)] lg:h-[calc(100%_-_100px)] overflow-y-auto z-20">
-    <nav class="mt-10 md:mt-20">
+    <nav class="mt-10 md:mt-40 md:ml-50">
       <ul>
         {{ nav:main }}
           {{ partial:menu/overlay/parent-item }}
         {{ /nav:main }}
       </ul>
     </nav>
-    {{ partial:components/socials class="mt-20" hover="hover:text-black" }}
+    {{ partial:components/socials class="mt-20 md:ml-48" hover="hover:text-black" }}
   </div>
 </div>

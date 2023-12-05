@@ -1,7 +1,7 @@
 <li class="mt-15 lg:mt-0 leading-none">
   <a 
     href="{{ url }}" 
-    class="lg:text-[26px] xl:text-[32px] lg:px-15 xl:px-25 no-underline relative hover:underline underline-offset-[20px] lg:underline-offset-[30px] decoration-1 {{ is_current && children ? '!no-underline' : '' }} {{ is_current && !children ? '!underline' : '' }}"
+    class="lg:text-[26px] xl:text-[32px] lg:px-15 xl:px-25 no-underline relative hover:underline hover:text-rose transition-colors underline-offset-[20px] lg:underline-offset-[30px] decoration-1 {{ is_current || is_parent ? 'text-rose' : ''}} {{ is_parent ? 'hover:!no-underline' : '' }} {{ is_current && children ? '!no-underline' : '' }} {{ is_current && !children ? '!underline' : '' }}"
     title="{{ title }}"
     data-menu-parent>
     {{ title }}

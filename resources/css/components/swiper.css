@@ -1,16 +1,16 @@
 /* container */
 .swiper {
-  @apply w-full h-full
+  @apply w-full h-full relative
 }
 
 /* slides */
 .swiper-slide {
-  @apply text-left bg-black flex justify-center items-center select-none !h-[320px] md:!h-auto !w-full md:!w-auto
+  @apply text-left bg-black flex justify-center items-center select-none max-w-[100vw] xl:max-w-[calc(1260px)] aspect-[16/10] lg:aspect-[16/9] xl:aspect-[16/8]
 }
 
 /* slide image */
 .swiper-slide img {
-  @apply !opacity-25 transition-opacity duration-300 ease-in-out block w-full h-full object-cover md:w-auto md:h-[480px] xl:h-[560px]
+  @apply !opacity-25 transition-opacity duration-300 ease-in-out block w-full h-full object-cover
 }
 
 .swiper-slide-active img {
@@ -19,7 +19,7 @@
 
 /* pagination */
 .swiper-pagination {
-  @apply !bottom-auto !top-auto !relative !text-right pt-10 w-full max-w-inner mx-auto px-20 lg:px-40
+  @apply !bottom-auto !top-auto !relative !text-left pt-10 w-full max-w-inner mx-auto px-20 lg:px-40
 }
 
 .swiper-pagination .swiper-pagination-bullet {
@@ -28,4 +28,18 @@
 
 .swiper-pagination .swiper-pagination-bullet-active {
   @apply bg-white
+}
+
+/* navigation */
+.swiper-btn-next,
+.swiper-btn-prev {
+  @apply absolute z-10 flex items-center justify-between top-0 h-full text-white transition-all duration-300 ease-in-out hover:text-rose px-15 2xl:px-45
+}
+
+.swiper-btn-next {
+  @apply right-0
+}
+
+.swiper-btn-prev {
+  @apply left-0
 }

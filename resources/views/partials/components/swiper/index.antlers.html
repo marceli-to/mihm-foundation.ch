@@ -3,27 +3,33 @@
     <div class="swiper-slide" 
       data-slide-title="Projekt 1" 
       data-slide-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corrupti eaque optio dolor consequuntur, consectetur alias tempora ullam tenetur libero at inventore sunt voluptatum harum? Maxime obcaecati quidem veniam quod!">
-      <img src="/assets/dummy/swiper-1.jpg" alt="" class="">
+      <img src="/assets/dummy/dummy-1.jpg" alt="" class="">
     </div>
     <div class="swiper-slide" data-slide-title="Projekt 2" data-slide-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur alias tempora ullam tenetur libero at inventore sunt voluptatum harum? Maxime obcaecati quidem veniam quod!">
-      <img src="/assets/dummy/swiper-2.jpg" alt="" class="">
+      <img src="/assets/dummy/dummy-2.jpg" alt="" class="">
     </div>
     <div class="swiper-slide" data-slide-title="Projekt 3" data-slide-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero at inventore sunt voluptatum harum? Maxime obcaecati quidem veniam quod!">
-      <img src="/assets/dummy/swiper-3.jpg" alt="" class="">
+      <img src="/assets/dummy/dummy-3.jpg" alt="" class="">
     </div>
     <div class="swiper-slide" data-slide-title="Projekt 4" data-slide-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corrupti eaque optio dolor consequuntur, consectetur alias tempora ullam tenetur libero at inventore sunt voluptatum harum? Maxime obcaecati quidem veniam quod! Lorem ipsum dolor sit amet consectetur adipisicing elit.">
-      <img src="/assets/dummy/swiper-4.jpg" alt="" class="">
+      <img src="/assets/dummy/dummy-1.jpg" alt="" class="">
     </div>
     <div class="swiper-slide" data-slide-title="Projekt 5" data-slide-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. At inventore sunt voluptatum harum? Maxime obcaecati quidem veniam quod!">
-      <img src="/assets/dummy/swiper-3.jpg" alt="" class="">
+      <img src="/assets/dummy/dummy-3.jpg" alt="" class="">
     </div>
     <div class="swiper-slide" data-slide-title="Projekt 6" data-slide-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corrupti eaque optio dolor consequuntur, consectetur alias tempora ullam tenetur libero at inventore sunt voluptatum harum? Maxime obcaecati quidem veniam quod!">
-      <img src="/assets/dummy/swiper-2.jpg" alt="" class="">
+      <img src="/assets/dummy/dummy-2.jpg" alt="" class="">
     </div>
     <div class="swiper-slide" data-slide-title="Projekt 7" data-slide-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corrupti eaque optio dolor consequuntur!">
-      <img src="/assets/dummy/swiper-1.jpg" alt="" class="">
+      <img src="/assets/dummy/dummy-3.jpg" alt="" class="">
     </div>
   </div>
+  <a href="javascript:;" title="Vorheriger Slide" class="swiper-btn-prev">
+    {{ partial:icons/chevron-left class="h-40 lg:h-60 w-auto" }}
+  </a>
+  <a href="javascript:;" title="Nächster Slide" class="swiper-btn-next">
+    {{ partial:icons/chevron-right class="h-40 lg:h-60 w-auto" }}
+  </a>
 </div>
 <div class="swiper-pagination relative w-full max-w-inner mx-auto px-20 lg:px-40"></div>
 
@@ -34,6 +40,6 @@
     <p class="max-w-5xl" data-project-text>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corrupti eaque optio dolor consequuntur, consectetur alias tempora ullam tenetur libero at inventore sunt voluptatum harum? Maxime obcaecati quidem veniam quod!
     </p>
-    <a href="" class="underline decoration-1 underline-offset-4 hover:no-underline">Weitere Informationen</a>
+    <a href="" class="underline decoration-1 underline-offset-4 hover:text-rose transition-all">Weitere Informationen</a>
   </div>
 {{ /partial:layout/inner }}

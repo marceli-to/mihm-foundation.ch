@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 // init Swiper:
 const swiper = new Swiper(".swiper", {
   modules: [Navigation, Pagination],
-  slidesPerView: 1,
+  slidesPerView: 'auto',
   centeredSlides: true,
   loop: true,
   spaceBetween: 20,
@@ -17,9 +17,12 @@ const swiper = new Swiper(".swiper", {
   },
   breakpoints: {
     700: {
-      slidesPerView: 'auto',
       spaceBetween: 30,
     },
+  },
+  navigation: {
+    nextEl: ".swiper-btn-next",
+    prevEl: ".swiper-btn-prev",
   },
 });
 

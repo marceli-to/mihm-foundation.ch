@@ -63,7 +63,12 @@
     {{ partial:layout/inner }}
       {{ partial:layout/label label="H2" }}
       <h1 class="text-xl md:text-3xl lg:text-5xl xl:text-6xl leading-[1.2] mb-20 md:mb-40 lg:mb-55">Aktuelle Förderprojekte</h1>
+      <div class="flex justify-between">
       {{ partial:layout/label label="Slideshow" class="!mb-15" }}
+      {{ partial:layout/label label="Image ratio: 16/10" class="!mb-15 ml-8 lg:hidden" }}
+      {{ partial:layout/label label="Image ratio: 16/9" class="!mb-15 ml-8 hidden lg:block xl:hidden" }}
+      {{ partial:layout/label label="Image ratio: 16/8" class="!mb-15 ml-8 hidden xl:block" }}
+      </div>
     {{ /partial:layout/inner }}
     {{ partial:components/swiper/index}}
   </div>

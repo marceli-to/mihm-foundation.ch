@@ -6,7 +6,7 @@
     {{ title }}
   </a>
   {{ if children }}
-    <ul class="ml-30 my-10">
+    <ul class="ml-30 my-20 {{ is_current || is_parent ? 'mt-25' : ''}}">
       {{ children }}
         {{ partial:menu/overlay/child-item }}
       {{ /children }}
