@@ -10,6 +10,7 @@ tabs:
             handle: title
             field:
               type: text
+              required: true
               validate:
                 - required
               display: Titel
@@ -19,6 +20,47 @@ tabs:
               replicator_preview: true
               input_type: text
               antlers: false
+              hide_display: false
+          -
+            handle: page_elements
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                neue_set-gruppe:
+                  display: 'Neue Set-Gruppe'
+                  instructions: null
+                  icon: null
+                  sets:
+                    editor:
+                      display: Editor
+                      instructions: null
+                      icon: text-formatting-markdown
+                      fields:
+                        -
+                          import: editor
+                    form:
+                      display: Form
+                      instructions: null
+                      icon: form-text-field
+                      fields:
+                        -
+                          import: form
+                    banner:
+                      display: Banner
+                      instructions: 'Add a themed banner'
+                      icon: align-object-center
+                      fields:
+                        -
+                          import: banner
+              type: replicator
+              display: 'Page elements'
+              icon: replicator
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
               hide_display: false
   seo:
     display: SEO
@@ -32,9 +74,9 @@ tabs:
               input_type: text
               antlers: false
               type: text
-              display: Titel
+              display: Title
               icon: text
-              instructions: 'Kann als Ersatz für den Seitentitel verwendet werden'
+              instructions: 'Can be used as a replacement for the page title'
               listable: hidden
               instructions_position: below
               visibility: visible
@@ -45,14 +87,14 @@ tabs:
             field:
               antlers: false
               type: textarea
-              display: Beschreibung
+              display: Description
               icon: textarea
               listable: hidden
               instructions_position: below
               visibility: visible
               replicator_preview: true
               hide_display: false
-              instructions: 'Ein bis zwei beschreibende Sätze über den Inhalt der Seite.'
+              instructions: 'One or two descriptive sentences about the content of the page.'
           -
             handle: open_graph_image
             field:
@@ -64,7 +106,7 @@ tabs:
               show_filename: true
               show_set_alt: true
               type: assets
-              display: Bild
+              display: Image
               icon: assets
               listable: hidden
               instructions_position: below
@@ -72,7 +114,7 @@ tabs:
               replicator_preview: true
               hide_display: false
               folder: images
-              instructions: 'Beim Sharing auf Social Media verwendetes Bild'
+              instructions: 'Image used for sharing on social media.'
   sidebar:
     display: Sidebar
     sections:
@@ -83,6 +125,7 @@ tabs:
             field:
               type: slug
               localizable: true
+              validate: 'max:200'
           -
             handle: parent
             field:
@@ -133,3 +176,4 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              default: '#D3A6B0'

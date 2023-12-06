@@ -1,0 +1,15 @@
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea,
+select {
+  @apply text-sm md:text-base lg:text-md xl:text-lg leading-[1.2] w-full py-10 lg:py-15 px-0 bg-transparent border-0 border-b border-white !ring-0 focus:outline-none focus:!ring-0 focus:text-rose focus:border-rose shadow-none !shadow-none
+}
+
+select {
+  @apply bg-right-center bg-dropdown bg-no-repeat accent-white mt-5 lg:mt-10
+}
+
+textarea {
+  @apply border mt-10 px-10 lg:px-15 min-h-[150px] sm:min-h-[200px] lg:min-h-[320px];
+}

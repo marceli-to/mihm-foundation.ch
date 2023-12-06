@@ -1,62 +1,40 @@
-{{ partial:layout/section }}
-
 {{ content }}
   {{ if type == 'text' }}
     {{ text }}
   {{ /if }}
 
-  {{ if type == 'lead' }}
-    {{ partial:components/lead }}
+  {{ if type == 'anchor' }}
+    {{ partial:components/anchor }}
   {{ /if }}
 
-  {{ if type == 'film_teaser' }}
-    {{ partial:components/teaser/film }}
+
+  {{ if type == 'address' }}
+    {{ partial:partials/components/address }}
   {{ /if }}
 
-  {{ if type == 'link_page' }}
-    {{ partial:components/links/page }}
+  {{ if type == 'team' }}
+    {{ partial:partials/components/team }}
   {{ /if }}
 
-  {{ if type == 'link_download' }}
-    {{ partial:components/links/download }}
-  {{ /if }}
-
-  {{ if type == 'link_external' }}
-    {{ partial:components/links/external }}
+  {{ if type == 'teaser' }}
+    {{ partial:partials/components/teaser }}
   {{ /if }}
 
   {{ if type == 'image' }}
-    {{ partial:components/media/image }}
+    {{ partial:partials/components/media/image }}
   {{ /if }}
 
-  {{ if type == 'image_gallery' }}
-    {{ partial:components/media/image-gallery }}
+  {{ if type == 'accordion' }}
+    {{ partial:partials/components/accordion :id="id" }}
   {{ /if }}
 
-  {{ if type == 'video_embed' }}
-    {{ partial:components/media/video-embed }}
+  {{ if type == 'downloads' }}
+    {{ partial:partials/components/downloads }}
   {{ /if }}
 
-  {{ if type == 'project_previews' }}
-
-    {{ partial:projects/previews }}
-
+  {{ if type == 'media_download' }}
+  {{ partial:partials/components/media_downloads }}
   {{ /if }}
-
-  {{ if type == 'supported_projects' }}
-
-    {{ partial:projects/supported }}
-
-  {{ /if }}
-
-  {{ if type == 'anchor' }}
-
-    {{ partial:components/anchor }}
-
-  {{ /if }}
-
 
 
 {{ /content }}
-
-{{ /partial:layout/section}}

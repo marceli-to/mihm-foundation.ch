@@ -49,6 +49,15 @@ export default {
         'terracotta': '#C77149',
         'rose': '#D3A6B0'
       },
+
+      backgroundImage: {
+        'dropdown': "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E\")",
+      },
+      
+      backgroundPosition: {
+        'right-center': 'right center',
+      }
+
     },
 
     spacing: {

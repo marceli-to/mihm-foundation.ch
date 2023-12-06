@@ -17,3 +17,16 @@ preferences:
         - slug
         - type
         - status
+    team:
+      columns:
+        - title
+        - position
+        - status
+  forms:
+    contact_form:
+      columns:
+        - datestamp
+        - organisation
+        - firstname
+        - name
+        - email

@@ -1,0 +1,27 @@
+<a name="formular-foerderung-beantragen"></a>
+<h2>{{ title }}</h2>
+{{ form:application_form class="mt-30 lg:mt-45 xl:mt-60" }}
+
+  {{ if errors }}
+    {{ partial:components/forms/elements/errors }}
+  {{ /if }}
+
+  {{ if success }}
+    {{ partial:components/forms/elements/success }}
+  {{ /if }}
+
+  {{ fields }}
+    {{ partial:components/forms/elements/group }}
+      {{ partial:components/forms/elements/label }}
+      {{ partial:components/forms/elements/field }}
+      {{ if error }}
+        {{ partial:components/forms/elements/error }}
+      {{ /if }}
+    {{ /partial:components/forms/elements/group }}
+  {{ /fields }}
+
+  {{ partial:components/forms/elements/group class="!mb-0" }}
+    {{ partial:components/forms/elements/button label="Beantragen" }}
+  {{ /partial:components/forms/elements/group}}
+
+{{ /form:application_form }}

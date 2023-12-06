@@ -1,3 +1,17 @@
-{{ partial:layout/section class="bg-black font-normal text-xl md:text-2xl leading-[1.3]" }}
-  {{ content }}
-{{ /partial:layout/section }}
+<div class="w-full max-w-inner mx-auto text-black theme-{{ theme }} mt-50 sm:mt-65 lg:mt-85 xl:mt-105">
+  <div class="w-full {{ class }} p-20 lg:p-30 xl:py-40 xl:px-50">
+    {{ if title }}
+      <h1>{{ title }}</h1>
+    {{ /if }}
+    {{ if text }}
+      <div class="text-lg md:text-2xl lg:text-4xl xl:text-5xl leading-[1.1] mb-15 md:mb-30 lg:mb-45 hyphens-auto">
+        {{ text }}
+      </div>
+    {{ /if }}
+    {{ if link }}
+      <a href="{{ link }}" target="{{ link_target }}" class="underline decoration-1 underline-offset-4 hover:no-underline">
+        {{ link_text }}
+      </a>
+    {{ /if }}
+  </div>
+</div>

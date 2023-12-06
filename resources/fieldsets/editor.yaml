@@ -45,78 +45,59 @@ fields:
           instructions: null
           icon: programming-module-box-cube
           sets:
-            link_page:
-              display: Seitenlink
-              instructions: 'Link auf eine interne oder externe Seite'
-              icon: link
-              fields:
-                -
-                  import: link_page
-            link_download:
-              display: Downloadlink
-              instructions: 'Link auf eine Datei'
-              icon: link
-              fields:
-                -
-                  import: link_download
-            link_external:
-              display: 'Externer Link'
-              instructions: 'Link auf ein externes Ziel'
-              icon: link-external
-              fields:
-                -
-                  import: link_external
-            image:
-              display: Bild
-              instructions: 'Einzelnes Bild hinzufügen'
-              icon: media-image-picture-orientation
-              fields:
-                -
-                  import: image
-            image_gallery:
-              display: Bildergalerie
-              instructions: 'Bildergalerie für mehrere Bilder hinzufügen'
-              icon: media-image-picture-gallery
-              fields:
-                -
-                  import: image_gallery
-            video_embed:
-              display: 'Video Embed'
-              instructions: 'Video Embed Code'
-              icon: social-vimeo
-              fields:
-                -
-                  import: video_embed
-        special_elements:
-          display: 'Special Elements'
-          instructions: null
-          icon: favorite-star
-          sets:
-            film_teaser:
-              display: 'Film teaser'
+            accordion:
+              display: Accordion
               instructions: null
-              icon: media-webcam-video
-              fields:
-                -
-                  import: film_teaser
-            project_previews:
-              display: 'Projekt Vorschau'
-              instructions: 'Auswahl von Projekten hinzufügen'
-              icon: file-content-list
-              fields:
-                -
-                  import: project_previews
-            supported_projects:
-              display: 'Unterstützte Projekte'
-              instructions: 'Unterstützte Projekte hinzufügen'
               icon: form-drop-down-menu
               fields:
                 -
-                  import: supported_projects
-            anchor:
-              display: Anchor
-              instructions: 'Anker / Scrollziel hinzufügen'
-              icon: link
+                  import: accordion
+            address:
+              display: Address
+              instructions: 'Can be edited in "Globals"'
+              icon: form-address-field
               fields:
                 -
-                  import: anchor
+                  import: address
+            image:
+              display: Image
+              instructions: 'Add a single image'
+              icon: media-image-camera
+              fields:
+                -
+                  import: image
+            team:
+              display: Team
+              instructions: null
+              icon: user-multiple
+              fields:
+                -
+                  import: team
+            banner:
+              display: Banner
+              instructions: 'Add a themed banner'
+              icon: align-object-center
+              fields:
+                -
+                  import: banner
+            teaser:
+              display: 'Teaser Förderung'
+              instructions: null
+              icon: layout-three-columns
+              fields:
+                -
+                  import: teaser
+            downloads:
+              display: Downloads
+              instructions: null
+              icon: layout-grid-dots
+              fields:
+                -
+                  import: downloads
+            media_download:
+              display: 'Media download'
+              instructions: null
+              icon: download-arrow-down
+              fields:
+                -
+                  import: media_download

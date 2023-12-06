@@ -5,6 +5,7 @@
 
 @import "components/collapsible.css";
 @import "components/headings.css";
+@import "components/forms.css";
 @import "components/swiper.css";
 
 @import "utils.css";
@@ -14,6 +15,14 @@ body {
   @apply antialiased;
 }
 
-main p {
+main p:not(:last-of-type) {
   @apply mb-20 md:mb-35 lg:mb-45;
+}
+
+main section.content a {
+  @apply underline decoration-1 underline-offset-4 hover:text-rose transition-all;
+}
+
+main strong, b {
+  @apply font-bold
 }
