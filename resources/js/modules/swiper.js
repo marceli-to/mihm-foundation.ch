@@ -1,16 +1,20 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // init Swiper:
 const swiper = new Swiper(".swiper", {
-  modules: [Navigation, Pagination],
+  modules: [Navigation, Pagination, Keyboard],
   slidesPerView: 'auto',
   centeredSlides: true,
-  loop: true,
+  loop: false,
   spaceBetween: 20,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
