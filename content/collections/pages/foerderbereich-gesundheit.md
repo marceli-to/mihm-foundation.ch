@@ -4,7 +4,7 @@ blueprint: page
 title: 'Förderbereich Gesundheit'
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
 updated_at: 1701897158
-logo_theme: '#4B6E5A'
+page_theme: '#4B6E5A'
 page_elements:
   -
     id: lpu9lsxa

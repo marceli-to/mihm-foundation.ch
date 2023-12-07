@@ -106,5 +106,5 @@ page_elements:
     type: banner
     enabled: true
     link_target: _blank
-logo_theme: '#D3A6B0'
+page_theme: '#D3A6B0'
 ---

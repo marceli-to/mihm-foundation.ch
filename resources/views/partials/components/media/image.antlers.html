@@ -13,12 +13,7 @@
       title="{{ caption ? caption : image:alt }}" 
       height="{{ image:height }}" 
       width="{{ image:width }}"
-      class="block w-full h-auto object-cover"
+      class="block w-full h-auto object-cover {{ imageClass ?? '' }}"
       loading="lazy">
   </picture>
-  {{# {{ if caption }}
-    <figcaption>
-      {{ caption }}
-    </figcaption>
-  {{ /if }} #}}
 </figure>

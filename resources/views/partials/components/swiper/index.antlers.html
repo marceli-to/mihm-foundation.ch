@@ -1,28 +1,13 @@
-<div class="swiper">
+<div class="swiper mt-40 md:mt-60 lg:mt-80 xl:mt-100">
   <div class="swiper-wrapper">
-    <div class="swiper-slide" 
-      data-slide-title="Projekt 1" 
-      data-slide-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corrupti eaque optio dolor consequuntur, consectetur alias tempora ullam tenetur libero at inventore sunt voluptatum harum? Maxime obcaecati quidem veniam quod!">
-      <img src="/assets/dummy/dummy-1.jpg" alt="" class="">
-    </div>
-    <div class="swiper-slide" data-slide-title="Projekt 2" data-slide-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur alias tempora ullam tenetur libero at inventore sunt voluptatum harum? Maxime obcaecati quidem veniam quod!">
-      <img src="/assets/dummy/dummy-2.jpg" alt="" class="">
-    </div>
-    <div class="swiper-slide" data-slide-title="Projekt 3" data-slide-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero at inventore sunt voluptatum harum? Maxime obcaecati quidem veniam quod!">
-      <img src="/assets/dummy/dummy-3.jpg" alt="" class="">
-    </div>
-    <div class="swiper-slide" data-slide-title="Projekt 4" data-slide-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corrupti eaque optio dolor consequuntur, consectetur alias tempora ullam tenetur libero at inventore sunt voluptatum harum? Maxime obcaecati quidem veniam quod! Lorem ipsum dolor sit amet consectetur adipisicing elit.">
-      <img src="/assets/dummy/dummy-1.jpg" alt="" class="">
-    </div>
-    <div class="swiper-slide" data-slide-title="Projekt 5" data-slide-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. At inventore sunt voluptatum harum? Maxime obcaecati quidem veniam quod!">
-      <img src="/assets/dummy/dummy-3.jpg" alt="" class="">
-    </div>
-    <div class="swiper-slide" data-slide-title="Projekt 6" data-slide-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corrupti eaque optio dolor consequuntur, consectetur alias tempora ullam tenetur libero at inventore sunt voluptatum harum? Maxime obcaecati quidem veniam quod!">
-      <img src="/assets/dummy/dummy-2.jpg" alt="" class="">
-    </div>
-    <div class="swiper-slide" data-slide-title="Projekt 7" data-slide-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corrupti eaque optio dolor consequuntur!">
-      <img src="/assets/dummy/dummy-3.jpg" alt="" class="">
-    </div>
+    {{ projects }}
+      <div class="swiper-slide" 
+        data-slide-title="{{ title }}" 
+        data-slide-text="{{ teaser }}"
+        data-slide-url="/foerderung/{{ category }}/{{ title | slugify }}">
+        {{ partial:components/media/image imageClass="!h-full aspect-[16/10] lg:aspect-[16/9] xl:aspect-[16/8]" }}
+      </div>
+    {{ /projects}}
   </div>
   <a href="javascript:;" title="Vorheriger Slide" class="swiper-btn-prev">
     {{ partial:icons/chevron-left class="h-40 lg:h-60 w-auto" }}
@@ -33,13 +18,21 @@
 </div>
 <div class="swiper-pagination relative w-full max-w-inner mx-auto px-20 lg:px-40"></div>
 
-{{ partial:layout/inner }}
+<div class="w-full max-w-inner mx-auto px-20 lg:px-40 mt-20 lg:mt-30">
+  {{ projects limit="1" }}
   <div>
-    {{ partial:layout/label label="H3" }}
-    <h2 class="text-lg md:text-2xl lg:text-4xl xl:text-5xl leading-[1.2] mb-15 md:mb-30 lg:mb-45" data-project-title>Projekt 1</h2>
-    <p class="max-w-5xl" data-project-text>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corrupti eaque optio dolor consequuntur, consectetur alias tempora ullam tenetur libero at inventore sunt voluptatum harum? Maxime obcaecati quidem veniam quod!
-    </p>
-    <a href="" class="underline decoration-1 underline-offset-4 hover:text-rose transition-all">Weitere Informationen</a>
+    <h2 class="text-lg md:text-2xl lg:text-4xl xl:text-5xl leading-[1.2] mb-15 md:mb-30 lg:mb-45" data-project-title>
+      {{ title }}
+    </h2>
+    <div class="max-w-5xl mb-20 md:mb-35 lg:mb-45" data-project-text>
+      {{ teaser | nl2br }}
+    </div>
+    <a 
+      href="/foerderung/{{ category }}/{{ title | slugify }}" 
+      class="underline decoration-1 underline-offset-4 hover:text-rose transition-all"
+      data-project-url>
+      Weitere Informationen
+    </a>
   </div>
-{{ /partial:layout/inner }}
+  {{ /projects }}
+</div>

@@ -4,7 +4,7 @@ blueprint: page
 title: 'Förderbereich Sensebezirk'
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
 updated_at: 1701935258
-logo_theme: '#C77149'
+page_theme: '#C77149'
 page_elements:
   -
     id: lpu9ovye

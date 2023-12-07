@@ -18,6 +18,10 @@
   {{ /partial:layout/inner}}
 {{ /if }}
 
+{{ if type == 'project_slideshow' }}
+{{ partial:components/swiper/index }}
+{{ /if }}
+
 {{ if type == 'banner' }}
 {{ partial:components/banner }}
 {{ /if }}

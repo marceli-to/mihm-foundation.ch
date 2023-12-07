@@ -3,6 +3,8 @@ tabs:
     display: Main
     sections:
       -
+        display: 'Contact info'
+        instructions: 'Global address data used in the footer and the contact page'
         fields:
           -
             handle: address

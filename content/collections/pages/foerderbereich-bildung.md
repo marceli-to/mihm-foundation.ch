@@ -4,7 +4,7 @@ blueprint: page
 title: 'Förderbereich Bildung'
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
 updated_at: 1701935242
-logo_theme: '#8A404F'
+page_theme: '#8A404F'
 page_elements:
   -
     id: lpu9o77v

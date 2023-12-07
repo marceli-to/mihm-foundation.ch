@@ -35,14 +35,14 @@ tabs:
                   sets:
                     editor:
                       display: Editor
-                      instructions: null
+                      instructions: 'Add an editor for content elements'
                       icon: text-formatting-markdown
                       fields:
                         -
                           import: editor
                     form:
                       display: Form
-                      instructions: null
+                      instructions: 'Add a form'
                       icon: form-text-field
                       fields:
                         -
@@ -54,6 +54,13 @@ tabs:
                       fields:
                         -
                           import: banner
+                    project_slideshow:
+                      display: 'Project Slideshow'
+                      instructions: 'Add a selection of projects'
+                      icon: media-image-picture-gallery
+                      fields:
+                        -
+                          import: project_slideshow
               type: replicator
               display: 'Page elements'
               icon: replicator
@@ -155,7 +162,7 @@ tabs:
               replicator_preview: true
               hide_display: false
           -
-            handle: logo_theme
+            handle: page_theme
             field:
               options:
                 '#4B6E5A': Olive
@@ -169,7 +176,7 @@ tabs:
               searchable: true
               cast_booleans: false
               type: select
-              display: 'Logo Theme'
+              display: Theme
               icon: select
               listable: hidden
               instructions_position: above

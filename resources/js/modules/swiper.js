@@ -35,13 +35,17 @@ swiper.on('slideChange', function (swiper) {
   // get data attributes from active slide
   const slideTitle = activeSlide.getAttribute('data-slide-title');
   const slideText = activeSlide.getAttribute('data-slide-text');
+  const slideUrl = activeSlide.getAttribute('data-slide-url');
 
   // update data-project-title and data-project-text
   // get elements by querySelector
   const projectTitle = document.querySelector('[data-project-title]');
   const projectText = document.querySelector('[data-project-text]');
+  const projectUrl = document.querySelector('[data-project-url]');
+
   // update elements
   projectTitle.textContent = slideTitle;
   projectText.textContent = slideText;
+  projectUrl.href = slideUrl;
 
 });
