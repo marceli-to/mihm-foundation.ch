@@ -3,7 +3,7 @@ id: e155b972-40ea-42ce-8529-6060832f1059
 blueprint: page
 title: Medien
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1701892838
+updated_at: 1701936090
 page_elements:
   -
     id: lpu0p3gx
@@ -68,6 +68,15 @@ page_elements:
       -
         type: set
         attrs:
+          id: lpu6zgas
+          values:
+            type: media_download
+            date: '2023-10-21'
+            title: 'Medienartikel 2 Ime con recea quibus exerunt volenist ommo dolupta'
+            link: 'asset::assets::dummy/dummy-3.jpg'
+      -
+        type: set
+        attrs:
           id: lpu6yg3m
           values:
             type: media_download
@@ -83,15 +92,6 @@ page_elements:
             date: '2022-11-22'
             title: 'Medienartikel 1 Ime con recea quibus exerunt volenist ommo dolupta'
             link: 'asset::assets::dummy/dummy-1.jpg'
-      -
-        type: set
-        attrs:
-          id: lpu6zgas
-          values:
-            type: media_download
-            date: '2023-10-21'
-            title: 'Medienartikel 2 Ime con recea quibus exerunt volenist ommo dolupta'
-            link: 'asset::assets::dummy/dummy-3.jpg'
     type: editor
     enabled: true
   -
@@ -108,21 +108,21 @@ page_elements:
       -
         type: set
         attrs:
-          id: lpu70t9w
-          values:
-            type: media_download
-            date: '2022-11-22'
-            title: 'Medienartikel 1 Ime con recea quibus exerunt volenist ommo dolupta'
-            link: 'asset::assets::dummy/dummy-1.jpg'
-      -
-        type: set
-        attrs:
           id: lpu6zgas
           values:
             type: media_download
             date: '2023-10-21'
             title: 'Medienartikel 2 Ime con recea quibus exerunt volenist ommo dolupta'
             link: 'asset::assets::dummy/dummy-3.jpg'
+      -
+        type: set
+        attrs:
+          id: lpu70t9w
+          values:
+            type: media_download
+            date: '2022-11-22'
+            title: 'Medienartikel 1 Ime con recea quibus exerunt volenist ommo dolupta'
+            link: 'asset::assets::dummy/dummy-1.jpg'
     type: editor
     enabled: true
 logo_theme: '#D3A6B0'

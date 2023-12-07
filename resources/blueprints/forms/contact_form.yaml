@@ -20,12 +20,12 @@ tabs:
               validate:
                 - required
           -
-            handle: name
+            handle: firstname
             field:
               input_type: text
               antlers: false
               type: text
-              display: Name
+              display: Vorname
               icon: text
               listable: hidden
               instructions_position: above
@@ -35,12 +35,12 @@ tabs:
               validate:
                 - required
           -
-            handle: firstname
+            handle: name
             field:
               input_type: text
               antlers: false
               type: text
-              display: Vorname
+              display: Name
               icon: text
               listable: hidden
               instructions_position: above

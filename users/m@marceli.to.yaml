@@ -30,3 +30,10 @@ preferences:
         - firstname
         - name
         - email
+    application_form:
+      columns:
+        - datestamp
+        - organisation
+        - firstname
+        - name
+        - email

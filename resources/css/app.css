@@ -23,6 +23,22 @@ main section.content a {
   @apply underline decoration-1 underline-offset-4 hover:text-rose transition-all;
 }
 
+main section.content ul {
+  @apply list-disc ml-20;
+}
+
+main section.content li p {
+  @apply inline;
+}
+
+main section.content li {
+  @apply list-item mb-10 lg:mb-20;
+}
+
+main section.content p + ul {
+  @apply mt-10 md:mt-15 lg:mt-25;
+}
+
 main strong, b {
   @apply font-bold
 }

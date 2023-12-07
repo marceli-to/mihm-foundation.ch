@@ -16,7 +16,7 @@ return [
   'sites' => [
     'default' => [
       'name' => config('app.name'),
-      'locale' => 'en',
+      'locale' => 'de',
       'url' => '/',
     ],
   ],

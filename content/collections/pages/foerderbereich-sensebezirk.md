@@ -3,7 +3,7 @@ id: 83d40ce7-fec2-48f2-9164-03a6cb5045a5
 blueprint: page
 title: 'Förderbereich Sensebezirk'
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1701897289
+updated_at: 1701935258
 logo_theme: '#C77149'
 page_elements:
   -
@@ -24,7 +24,15 @@ page_elements:
         content:
           -
             type: text
-            text: 'Die Mihm Foundation engagiert sich für die kulturelle und touristische Entwicklung der Region Sense. Gefördert werden insbesondere:'
+            text: 'Die Mihm Foundation engagiert sich für die kulturelle und touristische Entwicklung der Region Sense. '
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'Gefördert werden insbesondere:'
       -
         type: bulletList
         content:

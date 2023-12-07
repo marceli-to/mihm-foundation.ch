@@ -3,7 +3,7 @@ id: aa26e16b-3b00-4014-a6da-bbc6ee93834b
 blueprint: page
 title: Stiftung
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1701878451
+updated_at: 1701936590
 page_elements:
   -
     id: lptu89ci
@@ -70,8 +70,8 @@ page_elements:
             type: team
             category: Stiftungsrat
             members:
-              - fb3d4183-8d4b-40b6-ac57-ec200aff581c
               - 4ced48d8-c359-434d-aa69-2a3988bfca08
+              - fb3d4183-8d4b-40b6-ac57-ec200aff581c
       -
         type: set
         attrs:
@@ -80,8 +80,8 @@ page_elements:
             type: team
             category: Geschäftsführung
             members:
-              - e17565df-84b6-44d8-a5ac-c1f3c9e89c41
               - 1c9f495b-a40c-4ccf-905a-59d01ddf5e1b
+              - e17565df-84b6-44d8-a5ac-c1f3c9e89c41
               - 14ba75cc-66ac-4308-9f43-ddfbd8b998a5
       -
         type: set
@@ -91,15 +91,15 @@ page_elements:
             type: team
             category: 'SDG Advisory Board'
             members:
+              - cf35009e-a747-429d-9373-a30f59c78d8c
               - edd869ad-c54d-4549-a181-d371622a3ba8
               - 6d048b23-c460-4c6d-a371-aa2820b26acd
-              - cf35009e-a747-429d-9373-a30f59c78d8c
     type: editor
     enabled: true
   -
     id: lptydy1y
     title: Stiftungszweck
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestiae asperiores sapiente mollitia fuga omnis, totam dolorum at et inventore sit porro vero?'
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestiae asperiores sapiente mollitia fuga omnis?'
     theme: rose
     link: 'https://google.com'
     link_text: 'Mehr informationen'
