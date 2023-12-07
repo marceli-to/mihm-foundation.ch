@@ -215,9 +215,9 @@ tabs:
             handle: page_theme
             field:
               options:
-                '#4B6E5A': Olive
-                '#8A404F': Burgundy
-                '#C77149': Terracotta
+                olive: Olive
+                burgundy: Burgundy
+                terracotta: Terracotta
               taggable: false
               push_tags: false
               multiple: false

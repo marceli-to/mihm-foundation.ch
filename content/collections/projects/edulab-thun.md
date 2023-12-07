@@ -29,8 +29,8 @@ quote_author: 'Sophie Bürgin, EduLab'
 open_graph_title: 'EduLab Thun | Förderprojekt Bildung'
 open_graph_description: 'Als ausserschulischen Lernort im Berner Oberland verbindet das EduLab ein flexibel gestaltbares Raumkonzept mit kreativen Innovationsmethoden wie Design Thinking. Erfahrene Coaches begleiten Jugendliche und Bildungsakteur:innen in Workshop-Formaten auf ihren spannenden Lernreisen. Die daraus resultierenden Erkenntnisse können nachhaltig in den Schulalltag übertragen werden.'
 category: foerderbereich-bildung
-page_theme: '#8A404F'
+page_theme: burgundy
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1701943464
+updated_at: 1701945275
 teaser: 'Als ausserschulischen Lernort im Berner Oberland verbindet das EduLab ein flexibel gestaltbares Raumkonzept mit kreativen Innovationsmethoden wie Design Thinking.'
 ---
