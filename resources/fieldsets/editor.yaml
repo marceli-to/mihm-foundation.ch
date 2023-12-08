@@ -47,14 +47,14 @@ fields:
           sets:
             accordion:
               display: Accordion
-              instructions: null
+              instructions: 'Add an accordion'
               icon: form-drop-down-menu
               fields:
                 -
                   import: accordion
             address:
               display: Address
-              instructions: 'Can be edited in "Globals"'
+              instructions: 'Add a global address'
               icon: form-address-field
               fields:
                 -
@@ -68,7 +68,7 @@ fields:
                   import: image
             team:
               display: Team
-              instructions: null
+              instructions: 'Add a group of team members'
               icon: user-multiple
               fields:
                 -
@@ -82,22 +82,29 @@ fields:
                   import: banner
             teaser:
               display: 'Teaser Förderung'
-              instructions: null
+              instructions: 'Add a rounded teaser (Förderung)'
               icon: layout-three-columns
               fields:
                 -
                   import: teaser
             downloads:
-              display: Downloads
-              instructions: null
+              display: 'Media Download'
+              instructions: 'Add a downloadable file'
               icon: layout-grid-dots
               fields:
                 -
                   import: downloads
             media_download:
-              display: 'Media download'
-              instructions: null
+              display: 'Media Article'
+              instructions: 'Add a media article / link'
               icon: download-arrow-down
               fields:
                 -
                   import: media_download
+            project_teasers:
+              display: 'Project Teasers'
+              instructions: 'Add a project teaser'
+              icon: text-formatting-image-top
+              fields:
+                -
+                  import: project_teasers

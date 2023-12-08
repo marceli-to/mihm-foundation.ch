@@ -5,8 +5,8 @@ title: Home
 template: templates/content/default
 author: 3f4934a7-72ef-446c-bf12-5336d13e6898
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1701941962
-page_theme: 'rose'
+updated_at: 1702027674
+page_theme: rose
 page_elements:
   -
     id: lptz5jrn
@@ -43,11 +43,20 @@ page_elements:
   -
     id: lptzutxp
     title: 'Förderung beantragen'
-    text: 'Die Mihm FoundationIhillis dolorro to inverrovita et peris eveligendae nonseque susaerfera exerchicit voluptatus est verum eat.'
+    text:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Die Mihm FoundationIhillis dolorro to inverrovita et peris eveligendae nonseque susaerfera exerchicit voluptatus est verum eat.'
     theme: rose
     link: '/foerderung#foerderung-beantragen'
     link_text: 'Zum Antrag'
     link_target: _self
     type: banner
     enabled: true
+    text_color: white
 ---

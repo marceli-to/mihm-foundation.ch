@@ -3,7 +3,7 @@ id: e155b972-40ea-42ce-8529-6060832f1059
 blueprint: page
 title: Medien
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1701936090
+updated_at: 1702028933
 page_elements:
   -
     id: lpu0p3gx
@@ -38,13 +38,15 @@ page_elements:
                 layout: wide
                 type: item
                 enabled: true
+                url: downloads/test.pdf
               -
                 id: lpu52tfo
-                image: dummy/dummy-2.jpg
+                image: dummy/dummy-3.jpg
                 title: Tätigkeitsbericht
                 layout: narrow
                 type: item
                 enabled: true
+                url: downloads/test.pdf
               -
                 id: lpu539sa
                 image: dummy/dummy-download.jpg
@@ -52,6 +54,7 @@ page_elements:
                 layout: wide
                 type: item
                 enabled: true
+                url: downloads/test.pdf
     type: editor
     enabled: true
   -
@@ -82,7 +85,7 @@ page_elements:
             type: media_download
             date: '2022-11-22'
             title: 'Medienartikel 1 Ime con recea quibus exerunt volenist ommo dolupta'
-            link: 'asset::assets::dummy/dummy-1.jpg'
+            link: 'asset::assets::downloads/test.pdf'
       -
         type: set
         attrs:
@@ -91,7 +94,7 @@ page_elements:
             type: media_download
             date: '2022-11-22'
             title: 'Medienartikel 1 Ime con recea quibus exerunt volenist ommo dolupta'
-            link: 'asset::assets::dummy/dummy-1.jpg'
+            link: 'asset::assets::downloads/test.pdf'
     type: editor
     enabled: true
   -
@@ -113,7 +116,7 @@ page_elements:
             type: media_download
             date: '2023-10-21'
             title: 'Medienartikel 2 Ime con recea quibus exerunt volenist ommo dolupta'
-            link: 'asset::assets::dummy/dummy-3.jpg'
+            link: 'asset::assets::downloads/test.pdf'
       -
         type: set
         attrs:
@@ -125,5 +128,5 @@ page_elements:
             link: 'asset::assets::dummy/dummy-1.jpg'
     type: editor
     enabled: true
-page_theme: 'rose'
+page_theme: rose
 ---

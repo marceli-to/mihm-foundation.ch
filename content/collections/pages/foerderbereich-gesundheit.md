@@ -3,7 +3,7 @@ id: 19750375-aa21-45af-8fce-6c9a40e30edc
 blueprint: page
 title: 'Förderbereich Gesundheit'
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1702024252
+updated_at: 1702030408
 page_theme: olive
 page_elements:
   -
@@ -110,4 +110,42 @@ page_elements:
     type: banner
     enabled: true
     text_color: white
+  -
+    id: lpwf9283
+    content:
+      -
+        type: heading
+        attrs:
+          level: 2
+        content:
+          -
+            type: text
+            text: Projekte
+      -
+        type: set
+        attrs:
+          id: lpwgjqla
+          values:
+            type: project_teasers
+            projects:
+              -
+                id: lpwgjrrt
+                project: 31654293-ce9e-445a-9261-d306cb5a034a
+                layout: wide
+                type: project
+                enabled: true
+              -
+                id: lpwgjw8u
+                project: b8ab5fb0-7f4b-43b0-b3eb-359a9c4ca031
+                layout: narrow
+                type: project
+                enabled: true
+              -
+                id: lpwgk05u
+                project: df312ccb-6081-47a9-92e1-9ed55ead9c31
+                layout: narrow
+                type: project
+                enabled: true
+    type: editor
+    enabled: true
 ---

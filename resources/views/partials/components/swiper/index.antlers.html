@@ -24,12 +24,12 @@
     <h2 class="text-lg md:text-2xl lg:text-4xl xl:text-5xl leading-[1.2] mb-15 md:mb-30 lg:mb-45" data-project-title>
       {{ title }}
     </h2>
-    <div class="max-w-5xl mb-20 md:mb-35 lg:mb-45" data-project-text>
+    <div class="max-w-5xl" data-project-text>
       {{ teaser | nl2br }}
     </div>
     <a 
       href="/foerderung/{{ category }}/{{ title | slugify }}" 
-      class="underline decoration-1 underline-offset-4 hover:text-rose transition-all"
+      class="inline-block mt-15 md:mt-20 lg:mt-25 underline decoration-1 underline-offset-4 hover:text-rose transition-all"
       data-project-url>
       Weitere Informationen
     </a>

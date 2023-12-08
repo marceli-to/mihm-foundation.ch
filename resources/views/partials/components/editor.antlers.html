@@ -7,7 +7,6 @@
     {{ partial:components/anchor }}
   {{ /if }}
 
-
   {{ if type == 'address' }}
     {{ partial:partials/components/address }}
   {{ /if }}
@@ -29,11 +28,15 @@
   {{ /if }}
 
   {{ if type == 'downloads' }}
-    {{ partial:partials/components/downloads }}
+    {{ partial:partials/components/media_downloads }}
   {{ /if }}
 
   {{ if type == 'media_download' }}
-  {{ partial:partials/components/media_downloads }}
+  {{ partial:partials/components/media_article }}
+  {{ /if }}
+
+  {{ if type == 'project_teasers' }}
+    {{ partial:partials/components/project_teasers }}
   {{ /if }}
 
 

@@ -35,7 +35,7 @@ fields:
     field:
       container: assets
       type: link
-      display: Link
+      display: URL
       icon: link
       listable: hidden
       instructions_position: above
