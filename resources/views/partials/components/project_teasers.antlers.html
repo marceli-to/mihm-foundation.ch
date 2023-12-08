@@ -4,7 +4,7 @@
       <div class="{{ if layout == 'wide' }} md:col-span-8 {{ /if }} {{ if layout == 'narrow' }} md:col-span-4 {{ /if }}">
         <a href="/foerderung/{{ category }}/{{ title | slugify }}"
           class="group !no-underline">
-          <figure class="mb-10 md:mb-15 lg:mb-20">
+          <figure class="mb-15 md:mb-20 lg:mb-25">
             <picture>
               <source media="(min-width: 768px)" srcset="{{ glide:image preset='lg-webp' }}" type="image/webp">
               <source srcset="{{ glide:image preset='md-webp' }}" type="image/webp">
@@ -19,7 +19,7 @@
                 loading="lazy">
             </picture>
           </figure>
-          <div class="mb-30 md:mb-0 group-hover:text-rose">
+          <div class="mb-40 md:mb-0 group-hover:text-rose">
             <h3>{{ title }}</h3>
             {{ teaser | nl2br }}
             <div class="mt-15 md:mt-20 lg:mt-25 underline decoration-1 underline-offset-4 group-hover:text-rose">Weitere Informationen</div>
