@@ -5,7 +5,7 @@ title: Home
 template: templates/content/default
 author: 3f4934a7-72ef-446c-bf12-5336d13e6898
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1702027674
+updated_at: 1702046676
 page_theme: rose
 page_elements:
   -
@@ -58,5 +58,5 @@ page_elements:
     link_target: _self
     type: banner
     enabled: true
-    text_color: white
+    text_color: black
 ---
