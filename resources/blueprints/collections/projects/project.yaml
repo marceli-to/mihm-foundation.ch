@@ -1,6 +1,6 @@
 tabs:
-  main:
-    display: Main
+  content:
+    display: Content
     sections:
       -
         fields:
@@ -126,6 +126,56 @@ tabs:
         fields:
           -
             import: quote
+  settings:
+    display: Settings
+    sections:
+      -
+        display: Settings
+        fields:
+          -
+            handle: page_theme
+            field:
+              options:
+                olive: Olive
+                burgundy: Burgundy
+                terracotta: Terracotta
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              default: olive
+              type: select
+              display: Theme
+              icon: select
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: category
+            field:
+              options:
+                foerderbereich-gesundheit: Gesundheit
+                foerderbereich-bildung: Bildung
+                foerderbereich-sensebezirk: Sensebezirk
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              default: health
+              type: select
+              display: Category
+              icon: select
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
   seo:
     display: SEO
     sections:
@@ -184,55 +234,11 @@ tabs:
       -
         fields:
           -
-            handle: category
-            field:
-              options:
-                foerderbereich-gesundheit: Gesundheit
-                foerderbereich-bildung: Bildung
-                foerderbereich-sensebezirk: Sensebezirk
-              taggable: false
-              push_tags: false
-              multiple: false
-              clearable: false
-              searchable: true
-              cast_booleans: false
-              default: health
-              type: select
-              display: Category
-              icon: select
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
             handle: slug
             field:
               type: slug
               localizable: true
               validate: 'max:200'
-          -
-            handle: page_theme
-            field:
-              options:
-                olive: Olive
-                burgundy: Burgundy
-                terracotta: Terracotta
-              taggable: false
-              push_tags: false
-              multiple: false
-              clearable: false
-              searchable: true
-              cast_booleans: false
-              default: '#4B6E5A'
-              type: select
-              display: Theme
-              icon: select
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
           -
             handle: parent
             field:

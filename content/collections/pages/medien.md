@@ -125,5 +125,5 @@ page_elements:
             link: 'asset::assets::dummy/dummy-1.jpg'
     type: editor
     enabled: true
-page_theme: '#D3A6B0'
+page_theme: 'rose'
 ---

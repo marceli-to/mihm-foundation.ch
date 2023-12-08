@@ -3,8 +3,8 @@ id: 19750375-aa21-45af-8fce-6c9a40e30edc
 blueprint: page
 title: 'Förderbereich Gesundheit'
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1701897158
-page_theme: '#4B6E5A'
+updated_at: 1702024252
+page_theme: olive
 page_elements:
   -
     id: lpu9lsxa
@@ -71,4 +71,43 @@ page_elements:
                     text: 'Projekte, die Gleichberechtigung im Gesundheitssystem schaffen.'
     type: editor
     enabled: true
+  -
+    id: lpwcyylj
+    text:
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://sdgs.un.org/goals'
+                  rel: null
+                  target: _blank
+                  title: 'Health – United Nations Sustainable Development'
+            text: 'Health - United Nations Sustainable Development'
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: '/foerderung#foerderung-beantragen'
+                  rel: null
+                  target: null
+                  title: 'Förderung beantragen'
+            text: 'Förderung beantragen'
+    theme: olive
+    type: banner
+    enabled: true
+    text_color: white
 ---

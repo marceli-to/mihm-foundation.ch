@@ -3,7 +3,7 @@ id: aa26e16b-3b00-4014-a6da-bbc6ee93834b
 blueprint: page
 title: Stiftung
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1701936590
+updated_at: 1702024472
 page_elements:
   -
     id: lptu89ci
@@ -99,12 +99,21 @@ page_elements:
   -
     id: lptydy1y
     title: Stiftungszweck
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestiae asperiores sapiente mollitia fuga omnis?'
+    text:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestiae asperiores sapiente mollitia fuga omnis?'
     theme: rose
     link: 'https://google.com'
     link_text: 'Mehr informationen'
     type: banner
     enabled: true
     link_target: _blank
-page_theme: '#D3A6B0'
+    text_color: black
+page_theme: rose
 ---

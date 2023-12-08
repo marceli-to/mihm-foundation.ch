@@ -6,7 +6,7 @@ template: templates/content/default
 author: 3f4934a7-72ef-446c-bf12-5336d13e6898
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
 updated_at: 1701941962
-page_theme: '#D3A6B0'
+page_theme: 'rose'
 page_elements:
   -
     id: lptz5jrn

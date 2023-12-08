@@ -2,14 +2,30 @@
   @apply bg-rose;
 }
 
+.fill-rose {
+  @apply text-rose;
+}
+
 .theme-burgundy {
   @apply bg-burgundy;
+}
+
+.fill-burgundy {
+  @apply text-burgundy;
 }
 
 .theme-olive {
   @apply bg-olive;
 }
 
+.fill-olive {
+  @apply text-olive;
+}
+
 .theme-terracotta {
   @apply bg-terracotta;
+}
+
+.fill-terracotta {
+  @apply text-terracotta;
 }

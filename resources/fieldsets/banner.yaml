@@ -16,33 +16,33 @@ fields:
   -
     handle: text
     field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - removeformat
+        - anchor
+      smart_typography: false
+      save_html: false
+      inline: false
+      toolbar_mode: fixed
+      reading_time: false
+      word_count: false
+      fullscreen: true
+      allow_source: true
+      enable_input_rules: true
+      enable_paste_rules: true
+      remove_empty_nodes: false
       antlers: false
-      type: textarea
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      always_show_set_button: false
+      collapse: false
+      previews: true
+      type: bard
       display: Text
-      icon: textarea
-      listable: hidden
-      instructions_position: above
-      visibility: visible
-      replicator_preview: true
-      hide_display: false
-  -
-    handle: theme
-    field:
-      options:
-        rose: Rose
-        burgundy: Burgundy
-        olive: Olive
-        terracotta: Terracotta
-      taggable: false
-      push_tags: false
-      multiple: false
-      clearable: false
-      searchable: true
-      cast_booleans: false
-      default: rose
-      type: select
-      display: Theme
-      icon: select
+      icon: bard
       listable: hidden
       instructions_position: above
       visibility: visible
@@ -101,3 +101,51 @@ fields:
       hide_display: false
       if:
         link: 'not null'
+  -
+    handle: theme
+    field:
+      options:
+        rose: Rose
+        burgundy: Burgundy
+        olive: Olive
+        terracotta: Terracotta
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: rose
+      type: select
+      display: Theme
+      icon: select
+      listable: hidden
+      instructions_position: below
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      instructions: 'Background color of the banner'
+      width: 50
+  -
+    handle: text_color
+    field:
+      options:
+        white: White
+        black: Black
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: white
+      type: select
+      display: Color
+      icon: select
+      listable: hidden
+      instructions_position: below
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      instructions: 'Text color of the banner'
+      width: 50

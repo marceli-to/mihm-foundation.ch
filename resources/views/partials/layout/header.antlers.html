@@ -2,7 +2,7 @@
   {{ partial:layout/inner class="min-h-[85px] md:min-h-[100px] relative flex justify-between lg:justify-start items-center lg:items-end py-20" }}
 
     <a href="/" title="Startseite {{ config:app:name }}">
-      {{ partial:icons/logo class="w-180 md:w-[200px] lg:w-[275px] xl:w-[390px] h-auto" theme="{{ page_theme ?? 'white' }}" }}
+      {{ partial:icons/logo class="w-180 md:w-[200px] lg:w-[275px] xl:w-[390px] h-auto fill-{{page_theme}}" }}
     </a>
 
     <a 

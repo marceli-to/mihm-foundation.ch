@@ -4,7 +4,7 @@ blueprint: page
 title: Kontakt
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
 updated_at: 1701871083
-page_theme: '#D3A6B0'
+page_theme: 'rose'
 page_elements:
   -
     id: lptjxx3j

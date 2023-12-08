@@ -122,6 +122,54 @@ tabs:
               hide_display: false
               folder: images
               instructions: 'Image used for sharing on social media.'
+  settings:
+    display: Settings
+    sections:
+      -
+        display: Settings
+        fields:
+          -
+            handle: page_theme
+            field:
+              options:
+                olive: Olive
+                burgundy: Burgundy
+                terracotta: Terracotta
+                rose: Rose
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              type: select
+              display: Theme
+              icon: select
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              default: rose
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+          -
+            handle: layout
+            field:
+              hide_partials: true
+              blueprint: false
+              type: template
+              display: Layout
+              icon: template
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
   sidebar:
     display: Sidebar
     sections:
@@ -142,45 +190,3 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
-          -
-            handle: template
-            field:
-              type: template
-              display: Template
-              localizable: true
-          -
-            handle: layout
-            field:
-              hide_partials: true
-              blueprint: false
-              type: template
-              display: Layout
-              icon: template
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
-            handle: page_theme
-            field:
-              options:
-                '#4B6E5A': Olive
-                '#8A404F': Burgundy
-                '#C77149': Terracotta
-                '#D3A6B0': Rose
-              taggable: false
-              push_tags: false
-              multiple: false
-              clearable: false
-              searchable: true
-              cast_booleans: false
-              type: select
-              display: Theme
-              icon: select
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-              default: '#D3A6B0'

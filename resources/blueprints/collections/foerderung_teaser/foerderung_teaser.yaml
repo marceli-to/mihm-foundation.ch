@@ -1,6 +1,6 @@
 tabs:
-  main:
-    display: Main
+  content:
+    display: Content
     sections:
       -
         fields:
@@ -59,10 +59,11 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
-  sidebar:
-    display: Sidebar
+  settings:
+    display: Settings
     sections:
       -
+        display: Settings
         fields:
           -
             handle: theme
@@ -86,6 +87,11 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
           -
             handle: slug
             field:
