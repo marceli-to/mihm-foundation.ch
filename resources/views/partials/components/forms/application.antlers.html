@@ -8,7 +8,14 @@
 
   {{ if success }}
     {{ partial:components/forms/elements/success }}
+    {{ if form_response:application_form_response }}
+      {{ form_response:application_form_response | nl2br }}
+    {{ else }}
+      Vielen Dank für Ihre Anfrage. Wir werden uns schnellstmöglich bei Ihnen melden.
+    {{ /if }}
+    {{ /partial:components/forms/elements/success }}
   {{ /if }}
+
   <input type="text" name="webs1te" class="hidden" />
   {{ fields }}
     {{ partial:components/forms/elements/group }}
