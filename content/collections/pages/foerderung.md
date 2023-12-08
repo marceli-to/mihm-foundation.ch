@@ -3,8 +3,8 @@ id: 4af42e50-f75b-4a00-b24d-6c2c24dc19b1
 blueprint: page
 title: Förderung
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1701880367
-page_theme: 'rose'
+updated_at: 1702064084
+page_theme: rose
 page_elements:
   -
     id: lptrmwgn
@@ -73,8 +73,8 @@ page_elements:
           values:
             type: teaser
             teaser:
-              - df9003cf-b90d-479b-b327-e42547381826
               - 4b315936-63bd-4536-82f3-c99e19e42a4e
+              - df9003cf-b90d-479b-b327-e42547381826
               - 3f5064d5-31d3-4749-8196-136b0a3d2469
     type: editor
     enabled: true

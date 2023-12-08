@@ -3,7 +3,7 @@ id: e155b972-40ea-42ce-8529-6060832f1059
 blueprint: page
 title: Medien
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1702028933
+updated_at: 1702068325
 page_elements:
   -
     id: lpu0p3gx
@@ -25,36 +25,66 @@ page_elements:
             type: text
             text: Downloads
       -
-        type: set
+        type: heading
         attrs:
-          id: lpu50hno
-          values:
-            type: downloads
-            item:
+          level: 3
+        content:
+          -
+            type: text
+            text: Handelsregisterauszug
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            marks:
               -
-                id: lpu50ikq
-                image: dummy/dummy-1.jpg
-                title: Statuten
-                layout: wide
-                type: item
-                enabled: true
-                url: downloads/test.pdf
+                type: link
+                attrs:
+                  href: 'statamic://asset::assets::downloads/test.pdf'
+                  rel: null
+                  target: _blank
+                  title: null
+            text: 'PDF herunterladen'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: Logos
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            marks:
               -
-                id: lpu52tfo
-                image: dummy/dummy-3.jpg
-                title: Tätigkeitsbericht
-                layout: narrow
-                type: item
-                enabled: true
-                url: downloads/test.pdf
+                type: link
+                attrs:
+                  href: 'statamic://asset::assets::downloads/test.pdf'
+                  rel: null
+                  target: _blank
+                  title: null
+            text: 'Logo 1 herunterladen'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
               -
-                id: lpu539sa
-                image: dummy/dummy-download.jpg
-                title: Logopaket
-                layout: wide
-                type: item
-                enabled: true
-                url: downloads/test.pdf
+                type: link
+                attrs:
+                  href: 'statamic://asset::assets::downloads/test.pdf'
+                  rel: null
+                  target: _blank
+                  title: null
+            text: 'Logo 2 herunterladen'
     type: editor
     enabled: true
   -

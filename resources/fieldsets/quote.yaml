@@ -1,4 +1,4 @@
-title: Quote
+title: Zitat
 fields:
   -
     handle: quote_image
@@ -18,8 +18,6 @@ fields:
       visibility: visible
       replicator_preview: true
       hide_display: false
-      validate:
-        - required
   -
     handle: quote_text
     field:
@@ -32,8 +30,6 @@ fields:
       visibility: visible
       replicator_preview: true
       hide_display: false
-      validate:
-        - required
   -
     handle: quote_author
     field:
@@ -46,5 +42,3 @@ fields:
       visibility: visible
       replicator_preview: true
       hide_display: false
-      validate:
-        - required

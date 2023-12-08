@@ -37,8 +37,11 @@ tabs:
             handle: text
             field:
               buttons:
+                - h2
+                - h3
                 - bold
                 - unorderedlist
+                - removeformat
                 - anchor
               smart_typography: false
               save_html: false
@@ -69,10 +72,31 @@ tabs:
           -
             handle: facts
             field:
+              buttons:
+                - bold
+                - removeformat
+                - anchor
+              smart_typography: false
+              save_html: false
+              inline: false
+              toolbar_mode: fixed
+              reading_time: false
+              word_count: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              remove_empty_nodes: false
               antlers: false
-              type: textarea
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
               display: Facts
-              icon: textarea
+              icon: bard
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -105,6 +129,25 @@ tabs:
               hide_display: false
               validate:
                 - required
+          -
+            handle: teaser_image
+            field:
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Teaser image'
+              icon: assets
+              instructions: 'Will be used as teaser image if set.'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              max_files: 1
           -
             handle: video
             field:
@@ -158,8 +201,8 @@ tabs:
             handle: category
             field:
               options:
-                foerderbereich-gesundheit: Gesundheit
                 foerderbereich-bildung: Bildung
+                foerderbereich-gesundheit: Gesundheit
                 foerderbereich-sensebezirk: Sensebezirk
               taggable: false
               push_tags: false
@@ -167,7 +210,7 @@ tabs:
               clearable: false
               searchable: true
               cast_booleans: false
-              default: health
+              default: foerderbereich-bildung
               type: select
               display: Category
               icon: select

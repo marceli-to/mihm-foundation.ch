@@ -1,4 +1,4 @@
-<figure class="{{ class }}">
+<figure class="mt-30 md:mt-45 lg:mt-60 {{ class }}">
   <picture>
     <source media="(min-width: 1280px)" srcset="{{ glide:image preset='2xl-webp' }}" type="image/webp">
     <source media="(min-width: 1024px)" srcset="{{ glide:image preset='xl-webp' }}" type="image/webp">
@@ -13,7 +13,7 @@
       title="{{ caption ? caption : image:alt }}" 
       height="{{ image:height }}" 
       width="{{ image:width }}"
-      class="block w-full h-auto object-cover {{ imageClass ?? '' }}"
+      class="block w-full h-full aspect-[16/9] object-cover {{ imageClass ?? '' }}"
       loading="lazy">
   </picture>
 </figure>

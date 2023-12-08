@@ -3,7 +3,7 @@ id: 19750375-aa21-45af-8fce-6c9a40e30edc
 blueprint: page
 title: 'Förderbereich Gesundheit'
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1702030408
+updated_at: 1702066547
 page_theme: olive
 page_elements:
   -
@@ -24,7 +24,7 @@ page_elements:
         content:
           -
             type: text
-            text: 'Die Mihm Foundation unterstützt Innovationen und Pionierleistungen im Bereich der Gesundheit. Gefördert werden Unternehmen und Start-Ups, deren kreativen Ideen und visionären Geschäftsideen noch ganz am Anfang stehen («early stage») und Potential für die Verbesserung der Gesundheit und des Wohlergehen der Gesamtgesellschaft haben.'
+            text: 'Die Mihm Foundation unterstützt Innovationen und Pionierleistungen im Bereich der Gesundheit. Gefördert werden Unternehmen und Start-Ups, deren kreative Ideen und visionäre Geschäftsideen noch ganz am Anfang stehen («early stage») und Potential für die Verbesserung der Gesundheit und des Wohlergehens der Menschen haben.'
       -
         type: paragraph
         attrs:
@@ -85,11 +85,11 @@ page_elements:
               -
                 type: link
                 attrs:
-                  href: 'https://sdgs.un.org/goals'
+                  href: 'https://sdgs.un.org/goals/goal3'
                   rel: null
                   target: _blank
-                  title: 'Health – United Nations Sustainable Development'
-            text: 'Health - United Nations Sustainable Development'
+                  title: 'UN | Goal 3'
+            text: 'UN – Goal 3'
       -
         type: paragraph
         attrs:
@@ -111,7 +111,7 @@ page_elements:
     enabled: true
     text_color: white
   -
-    id: lpwf9283
+    id: lpx2cb46
     content:
       -
         type: heading
@@ -122,30 +122,13 @@ page_elements:
             type: text
             text: Projekte
       -
-        type: set
+        type: paragraph
         attrs:
-          id: lpwgjqla
-          values:
-            type: project_teasers
-            projects:
-              -
-                id: lpwgjrrt
-                project: 31654293-ce9e-445a-9261-d306cb5a034a
-                layout: wide
-                type: project
-                enabled: true
-              -
-                id: lpwgjw8u
-                project: b8ab5fb0-7f4b-43b0-b3eb-359a9c4ca031
-                layout: narrow
-                type: project
-                enabled: true
-              -
-                id: lpwgk05u
-                project: df312ccb-6081-47a9-92e1-9ed55ead9c31
-                layout: narrow
-                type: project
-                enabled: true
+          class: null
+        content:
+          -
+            type: text
+            text: 'Zurzeit laufen Abklärungen und Analysen zur Unterstützung von Projekten im Bereich Gesundheit.'
     type: editor
     enabled: true
 ---

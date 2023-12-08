@@ -62,7 +62,7 @@ tabs:
                         -
                           import: project_slideshow
               type: replicator
-              display: 'Page elements'
+              display: 'Content elements'
               icon: replicator
               listable: hidden
               instructions_position: above

@@ -82,8 +82,8 @@ tabs:
             handle: area
             field:
               options:
-                gesundheit: Gesundheit
                 bildung: Bildung
+                gesundheit: Gesundheit
                 sensebezirk: Sensebezirk
               taggable: false
               push_tags: false
@@ -108,6 +108,20 @@ tabs:
               antlers: false
               type: textarea
               display: 'Kurzbeschrieb (max. 200 Wörter)'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+          -
+            handle: contribution
+            field:
+              antlers: false
+              type: textarea
+              display: 'Beitrag zur Zielerreichung des SDGs'
               icon: textarea
               listable: hidden
               instructions_position: above

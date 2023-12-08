@@ -108,3 +108,4 @@ fields:
               fields:
                 -
                   import: project_teasers
+      container: assets
