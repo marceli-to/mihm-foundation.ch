@@ -3,7 +3,7 @@ id: 19750375-aa21-45af-8fce-6c9a40e30edc
 blueprint: page
 title: 'Förderbereich Gesundheit'
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1702066547
+updated_at: 1702307992
 page_theme: olive
 page_elements:
   -
@@ -88,8 +88,8 @@ page_elements:
                   href: 'https://sdgs.un.org/goals/goal3'
                   rel: null
                   target: _blank
-                  title: 'UN | Goal 3'
-            text: 'UN – Goal 3'
+                  title: 'Sustainable Development Goal-3'
+            text: 'Sustainable Development Goal-3'
       -
         type: paragraph
         attrs:

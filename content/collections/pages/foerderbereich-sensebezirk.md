@@ -3,7 +3,7 @@ id: 83d40ce7-fec2-48f2-9164-03a6cb5045a5
 blueprint: page
 title: 'Förderbereich Sensebezirk'
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1702067336
+updated_at: 1702308047
 page_theme: terracotta
 page_elements:
   -
@@ -80,8 +80,8 @@ page_elements:
                   href: 'https://sdgs.un.org/goals/goal8'
                   rel: null
                   target: _blank
-                  title: 'UN | Goal 8'
-            text: 'UN – Goal 8'
+                  title: 'Sustainable Development Goal-8'
+            text: 'Sustainable Development Goal-8'
       -
         type: paragraph
         attrs:

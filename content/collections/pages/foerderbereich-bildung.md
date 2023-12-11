@@ -3,7 +3,7 @@ id: bea1a455-6b27-438c-9b37-55be91caa21b
 blueprint: page
 title: 'Förderbereich Bildung'
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1702067880
+updated_at: 1702307922
 page_theme: burgundy
 page_elements:
   -
@@ -77,11 +77,11 @@ page_elements:
               -
                 type: link
                 attrs:
-                  href: 'https://sdgs.un.org/goals/goal3'
+                  href: 'https://sdgs.un.org/goals/goal4'
                   rel: null
                   target: _blank
-                  title: 'UN | Goal 3'
-            text: 'UN – Goal 4'
+                  title: 'Sustainable Development Goal-4'
+            text: 'Sustainable Development Goal-4'
       -
         type: paragraph
         attrs:
