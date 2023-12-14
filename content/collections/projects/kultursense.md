@@ -25,15 +25,7 @@ facts:
         type: hardBreak
       -
         type: text
-        marks:
-          -
-            type: link
-            attrs:
-              href: 'https://google.ch/'
-              rel: null
-              target: null
-              title: Webseite
-        text: Website
+        text: 'Verein KulturSense'
   -
     type: paragraph
     attrs:
@@ -41,29 +33,16 @@ facts:
     content:
       -
         type: text
-        text: Förderlaufzeit
+        text: Förderjahr
       -
         type: hardBreak
       -
         type: text
-        text: '??'
-  -
-    type: paragraph
-    attrs:
-      class: null
-    content:
-      -
-        type: text
-        text: Förderbeitrag
-      -
-        type: hardBreak
-      -
-        type: text
-        text: '??'
+        text: '2024'
 image: dummy/swiper-1.jpg
 page_theme: terracotta
 category: foerderbereich-sensebezirk
 open_graph_title: 'KulturSense | Förderprojekt Sensebezirk'
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1702067303
+updated_at: 1702540703
 ---

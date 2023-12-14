@@ -79,8 +79,6 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
-              validate:
-                - required
               folder: team
               max_files: 1
           -
@@ -100,6 +98,19 @@ tabs:
               type: select
               display: Category
               icon: select
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: linkedin
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: LinkedIn
+              icon: text
               listable: hidden
               instructions_position: above
               visibility: visible

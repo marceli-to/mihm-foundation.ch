@@ -3,7 +3,7 @@ id: 4af42e50-f75b-4a00-b24d-6c2c24dc19b1
 blueprint: page
 title: Förderung
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1702064084
+updated_at: 1702540402
 page_theme: rose
 page_elements:
   -
@@ -24,7 +24,7 @@ page_elements:
         content:
           -
             type: text
-            text: 'Die Mihm Foundation fördert Projekte in den Bereichen Gesundheit, Bildung sowie aus dem Sensebezirk, die einen Beitrag zur Zielerreichung der SDGs leisten. Die Förderung geschieht stets im Verbund mit anderen Partnern und engagierten Akteuren. Die Selektion der Förderprojekte erfolgt durch das auf das Fördergebiet spezialisierte und unabhängige '
+            text: 'Die Mihm Foundation fördert Projekte in den Bereichen Bildung, Gesundheit sowie aus dem Sensebezirk, die einen Beitrag zur Zielerreichung der SDGs leisten. Die Förderung geschieht stets im Verbund mit anderen Partnern und engagierten Akteuren. Die Selektion der Förderprojekte erfolgt durch das auf das Fördergebiet spezialisierte und unabhängige '
           -
             type: text
             marks:

@@ -3,7 +3,7 @@ id: aa26e16b-3b00-4014-a6da-bbc6ee93834b
 blueprint: page
 title: Stiftung
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1702067661
+updated_at: 1702540418
 page_elements:
   -
     id: lptu89ci
@@ -39,7 +39,7 @@ page_elements:
         content:
           -
             type: text
-            text: "\_Als Dank und als Wertschätzung für die Menschen in der Region Schwarzsee und in der ganzen Schweiz initiierte Otto Mihm im Jahr 2021 gemeinsam mit seinem Sohn, Hans-Jörg Mihm die Mihm Foundation. Der Stiftungsrat setzt sich aus zwei Personen zusammen: Hans-Jörg Mihm und Marco Strahm."
+            text: 'Als Dank und als Wertschätzung für die Menschen in der Region Schwarzsee und in der ganzen Schweiz initiierte Otto Mihm im Jahr 2021 gemeinsam mit seinem Sohn, Hans-Jörg Mihm die Mihm Foundation. Der Stiftungsrat setzt sich aus zwei Personen zusammen: Hans-Jörg Mihm und Marco Strahm.'
       -
         type: set
         attrs:

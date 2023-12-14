@@ -40,25 +40,12 @@ facts:
     content:
       -
         type: text
-        text: Förderlaufzeit
+        text: Förderjahr
       -
         type: hardBreak
       -
         type: text
         text: '2023'
-  -
-    type: paragraph
-    attrs:
-      class: null
-    content:
-      -
-        type: text
-        text: Förderbeitrag
-      -
-        type: hardBreak
-      -
-        type: text
-        text: 'CHF 1000'
 image: dummy/dummy-2.jpg
 quote_image: team/dummy-team.jpg
 quote_text: 'Menschen brauchen neue Kompetenzen, um den Herausforderungen der Zukunft zu begegnen.'
@@ -70,6 +57,6 @@ open_graph_description: |-
 category: foerderbereich-bildung
 page_theme: burgundy
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1702065928
+updated_at: 1702540477
 teaser: 'Als ausserschulischen Lernort im Berner Oberland verbindet das EduLab ein flexibel gestaltbares Raumkonzept mit kreativen Innovationsmethoden wie Design Thinking.'
 ---

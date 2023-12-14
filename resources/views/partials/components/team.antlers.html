@@ -4,7 +4,7 @@
   <div class="sm:grid sm:grid-cols-12 sm:gap-30 lg:gap-45 xl:gap-60">
   {{ members }}
     <div class="mb-30 sm:mb-0 sm:col-span-6 md:col-span-4 leading-[1.2] lg:leading-[1]">
-      <figure class="mb-15 md:mb-20 lg:mb-25">
+      {{# <figure class="mb-15 md:mb-20 lg:mb-25">
         <picture>
           <source media="(min-width: 768px)" srcset="{{ glide:image preset='lg-webp' }}" type="image/webp">
           <source srcset="{{ glide:image preset='md-webp' }}" type="image/webp">
@@ -18,11 +18,16 @@
             class="block w-full h-auto object-cover aspect-[360/285]"
             loading="lazy">
         </picture>
-      </figure>
+      </figure> #}}
       {{ firstname }} {{ name }}<br>
       <span class="text-xxs sm:text-sm md:text-sm lg:text-base">
         {{ position }}
       </span>
+      {{ if linkedin }}
+        <a href="{{ linkedin }}" target="_blank" title="LinkedIn Profil {{ firstname }} {{ name }}" class="w-auto mt-10 block {{ hover ?? 'hover:text-rose' }} transition-colors">
+          {{ partial:icons/linkedin class="block w-auto h-16" }}
+        </a>
+      {{ /if }}
     </div>
   {{ /members }}
   </div>

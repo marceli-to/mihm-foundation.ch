@@ -3,21 +3,21 @@
     <ul class="flex items-end gap-x-5">
       {{ if social_media_accounts:facebook }}
         <li>
-          <a href="{{ social_media_accounts:facebook }}" title="Visit us on Facebook" class="flex items-center justify-center w-auto p-5 {{ hover ?? 'hover:text-rose' }} transition-colors">
+          <a href="{{ social_media_accounts:facebook }}" target="_blank" title="Visit us on Facebook" class="flex items-center justify-center w-auto p-5 {{ hover ?? 'hover:text-rose' }} transition-colors">
             {{ partial:icons/facebook class="block w-auto h-22" }}
           </a>
         </li>
       {{ /if }}
       {{ if social_media_accounts:instagram }}
         <li>
-          <a href="{{ social_media_accounts:instagram }}" title="Visit us on Instagram" class="flex items-center justify-center w-auto p-5 {{ hover ?? 'hover:text-rose' }} transition-colors">
+          <a href="{{ social_media_accounts:instagram }}" target="_blank" title="Visit us on Instagram" class="flex items-center justify-center w-auto p-5 {{ hover ?? 'hover:text-rose' }} transition-colors">
             {{ partial:icons/instagram class="block w-auto h-21" }}
           </a>
         </li>
       {{ /if }}
       {{ if social_media_accounts:linkedin }}
         <li>
-          <a href="{{ social_media_accounts:linkedin }}" title="Visit us on LinkedIn" class="flex items-center justify-center w-auto p-5 {{ hover ?? 'hover:text-rose' }} transition-colors">
+          <a href="{{ social_media_accounts:linkedin }}" target="_blank" title="Visit us on LinkedIn" class="flex items-center justify-center w-auto p-5 {{ hover ?? 'hover:text-rose' }} transition-colors">
             {{ partial:icons/linkedin class="block w-auto h-21" }}
           </a>
         </li>

@@ -3,8 +3,8 @@ id: e0f3c098-7673-42fc-942f-77132b99816a
 blueprint: page
 title: Mission
 updated_by: 3f4934a7-72ef-446c-bf12-5336d13e6898
-updated_at: 1701872846
-page_theme: 'rose'
+updated_at: 1702540383
+page_theme: rose
 page_elements:
   -
     id: lptsuaoi
@@ -74,7 +74,7 @@ page_elements:
             text: 'lokale und nachhaltige Wirtschafts- und Tourismusförderung'
           -
             type: text
-            text: '. Im Zentrum steht dabei immer das Wohl der Menschen – im Sensebezirk genauso wie auf der ganzen Welt. Die Mihm Foundation ist politisch und konfessionell neutral und frei von jeglichen kommerziellen Interessen.'
+            text: '. Die Stiftung konzentriert sich dabei auf nachhaltige und tragfähige Projekte in den Bereichen hochkarätige Bildung, Gesundheit und Wohlergehen sowie lokale und nachhaltige Wirtschafts- und Tourismusförderung.'
     type: editor
     enabled: true
   -
