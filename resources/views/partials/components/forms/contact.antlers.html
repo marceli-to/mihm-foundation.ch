@@ -20,9 +20,9 @@
     {{ partial:components/forms/elements/group }}
       {{ partial:components/forms/elements/label }}
       {{ partial:components/forms/elements/field }}
-      {{ if error }}
+      {{# {{ if error }}
         {{ partial:components/forms/elements/error }}
-      {{ /if }}
+      {{ /if }} #}}
     {{ /partial:components/forms/elements/group }}
   {{ /fields }}
 
