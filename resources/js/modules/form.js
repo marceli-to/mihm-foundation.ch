@@ -32,6 +32,20 @@
           label.classList.remove('text-red-500');
         });
       });
+
+      form.querySelectorAll('select').forEach((select) => {
+        select.addEventListener('focus', (event) => {
+          const label = event.target.previousElementSibling;
+          label.classList.remove('text-red-500');
+        });
+      });
+
+      form.querySelectorAll('textarea').forEach((textarea) => {
+        textarea.addEventListener('focus', (event) => {
+          const label = event.target.previousElementSibling;
+          label.classList.remove('text-red-500');
+        });
+      });
     });
   };
 
