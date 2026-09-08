@@ -122,15 +122,6 @@ tabs:
       -
         fields:
           -
-            handle: parent
-            field:
-              type: entries
-              collections:
-                - team
-              max_items: 1
-              listable: false
-              localizable: true
-          -
             handle: slug
             field:
               type: slug

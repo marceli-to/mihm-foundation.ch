@@ -35,26 +35,11 @@ return [
         |--------------------------------------------------------------------------
         |
         | The driver that will be used under the hood for image manipulation.
-        | Supported: "gd" or "imagick" (if installed on your server)
+        | Supported: "gd", "imagick" or a class name of a custom driver.
         |
         */
 
         'driver' => 'gd',
-
-        /*
-        |--------------------------------------------------------------------------
-        | Additional Image Extensions
-        |--------------------------------------------------------------------------
-        |
-        | Define any additional image file extensions you would like Statamic to
-        | process. You should ensure that both your server and the selected
-        | image manipulation driver properly supports these extensions.
-        |
-        */
-
-        'additional_extensions' => [
-            // 'heic',
-        ],
 
         /*
         |--------------------------------------------------------------------------
@@ -76,7 +61,7 @@ return [
         |--------------------------------------------------------------------------
         |
         | You may define global defaults for all manipulation parameters, such as
-        | quality, format, and sharpness. These can and will be be overwritten
+        | quality, format, and sharpness. These can and will be overwritten
         | on the tag parameter level as well as the preset level.
         |
         */
@@ -84,6 +69,19 @@ return [
         'defaults' => [
             // 'quality' => 50,
         ],
+
+        /*
+        |--------------------------------------------------------------------------
+        | Crop Quality
+        |--------------------------------------------------------------------------
+        |
+        | The quality used when saving images cropped in the control panel. The
+        | user may override this per crop. When null, the quality defined in
+        | the "defaults" above will be used, otherwise it falls back to 90.
+        |
+        */
+
+        'crop_quality' => null,
 
         /*
         |--------------------------------------------------------------------------
@@ -98,24 +96,19 @@ return [
         */
 
         'presets' => [
-
-          // Standard images
-          'xs-webp' => ['w' => 320, 'h' => 10000, 'q' => 90, 'fit' => 'contain', 'fm' => 'webp'],
-          'sm-webp' => ['w' => 480, 'h' => 10000, 'q' => 90, 'fit' => 'contain', 'fm' => 'webp'],
-          'md-webp' => ['w' => 768, 'h' => 10000, 'q' => 90, 'fit' => 'contain', 'fm' => 'webp'],
-          'lg-webp' => ['w' => 1280, 'h' => 10000, 'q' => 90, 'fit' => 'contain', 'fm' => 'webp'],
-          'xl-webp' => ['w' => 1440, 'h' => 10000, 'q' => 90, 'fit' => 'contain', 'fm' => 'webp'],
-          '2xl-webp' => ['w' => 1680, 'h' => 10000, 'q' => 90, 'fit' => 'contain', 'fm' => 'webp'],
-
-          'xs' => ['w' => 320, 'h' => 10000, 'q' => 90, 'fit' => 'contain'],
-          'sm' => ['w' => 480, 'h' => 10000, 'q' => 90, 'fit' => 'contain'],
-          'md' => ['w' => 768, 'h' => 10000, 'q' => 90, 'fit' => 'contain'],
-          'lg' => ['w' => 1280, 'h' => 10000, 'q' => 90, 'fit' => 'contain'],
-          'xl' => ['w' => 1440, 'h' => 10000, 'q' => 90, 'fit' => 'contain'],
-          '2xl' => ['w' => 1680, 'h' => 10000, 'q' => 90, 'fit' => 'contain'],
-
-          'max_upload_size' => ['w' => 2000, 'h' => 2000, 'fit' => 'max'],
-
+            'xs-webp' => ['w' => 320, 'h' => 10000, 'q' => 90, 'fit' => 'contain', 'fm' => 'webp'],
+            'sm-webp' => ['w' => 480, 'h' => 10000, 'q' => 90, 'fit' => 'contain', 'fm' => 'webp'],
+            'md-webp' => ['w' => 768, 'h' => 10000, 'q' => 90, 'fit' => 'contain', 'fm' => 'webp'],
+            'lg-webp' => ['w' => 1280, 'h' => 10000, 'q' => 90, 'fit' => 'contain', 'fm' => 'webp'],
+            'xl-webp' => ['w' => 1440, 'h' => 10000, 'q' => 90, 'fit' => 'contain', 'fm' => 'webp'],
+            '2xl-webp' => ['w' => 1680, 'h' => 10000, 'q' => 90, 'fit' => 'contain', 'fm' => 'webp'],
+            'xs' => ['w' => 320, 'h' => 10000, 'q' => 90, 'fit' => 'contain'],
+            'sm' => ['w' => 480, 'h' => 10000, 'q' => 90, 'fit' => 'contain'],
+            'md' => ['w' => 768, 'h' => 10000, 'q' => 90, 'fit' => 'contain'],
+            'lg' => ['w' => 1280, 'h' => 10000, 'q' => 90, 'fit' => 'contain'],
+            'xl' => ['w' => 1440, 'h' => 10000, 'q' => 90, 'fit' => 'contain'],
+            '2xl' => ['w' => 1680, 'h' => 10000, 'q' => 90, 'fit' => 'contain'],
+            'max_upload_size' => ['w' => 2000, 'h' => 2000, 'fit' => 'max'],
         ],
 
         /*
@@ -164,6 +157,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Control Panel Video Thumbnails
+    |--------------------------------------------------------------------------
+    |
+    | When enabled, Statamic will generate thumbnails for videos when FFmpeg
+    | is available. Generated thumbnails are displayed in the Control Panel.
+    | Without FFmpeg, videos fall back to a filetype icon.
+    |
+    */
+
+    'video_thumbnails' => true,
+
+    /*
+    |--------------------------------------------------------------------------
     | File Previews with Google Docs
     |--------------------------------------------------------------------------
     |
@@ -204,6 +210,25 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Crop Aspect Ratios
+    |--------------------------------------------------------------------------
+    |
+    | Configure the aspect ratio presets available in the Control Panel image
+    | crop editor. Each entry may be a "W:H" string (e.g. "16:9") or an array
+    | with a custom label and ratio: ['label' => 'Wide', 'ratio' => '16:9'].
+    |
+    */
+
+    'crop_aspect_ratios' => [
+        '16:9',
+        '4:3',
+        '3:2',
+        '2:1',
+        '1:1',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Enforce Lowercase Filenames
     |--------------------------------------------------------------------------
     |
@@ -214,5 +239,75 @@ return [
     */
 
     'lowercase' => true,
+
+    /*
+    |--------------------------------------------------------------------------
+    | Additional Uploadable Extensions
+    |--------------------------------------------------------------------------
+    |
+    | Statamic will only allow uploads of certain approved file extensions.
+    | If you need to allow more file extensions, you may add them here.
+    |
+    */
+
+    'additional_uploadable_extensions' => [],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Additional Filename Character Replacements
+    |--------------------------------------------------------------------------
+    |
+    | When uploading files, certain characters in filenames will be replaced
+    | to ensure a safe filename. You may configure additional replacements.
+    | These are in addition to the native ones. They are not overridable.
+    |
+    */
+
+    'additional_filename_replacements' => [],
+
+    /*
+    |--------------------------------------------------------------------------
+    | SVG Sanitization
+    |--------------------------------------------------------------------------
+    |
+    | Statamic will automatically sanitize SVG files when uploaded to avoid
+    | potential security issues. However, if you have a valid reason for
+    | disabling this, and you trust your users, you may do so here.
+    |
+    */
+
+    'svg_sanitization_on_upload' => true,
+
+    /*
+    |--------------------------------------------------------------------------
+    | FFmpeg
+    |--------------------------------------------------------------------------
+    |
+    | Statamic uses FFmpeg to extract thumbnails from videos to be shown in the
+    | Control Panel. You may adjust the binary location and cache path here.
+    | The configured binary must exist and be executable.
+    |
+    */
+
+    'ffmpeg' => [
+        'binary' => null,
+        'cache_path' => storage_path('statamic/glide/ffmpeg'),
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Replicator and Bard Set Preview Images
+    |--------------------------------------------------------------------------
+    |
+    | Replicator and Bard sets may have preview images to give users a visual
+    | representation of the content within. Here you may specify the asset
+    | container and folder where these preview images are to be stored.
+    |
+    */
+
+    'set_preview_images' => [
+        'container' => 'assets',
+        'folder' => 'set-previews',
+    ],
 
 ];

@@ -17,6 +17,21 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Authentication
+    |--------------------------------------------------------------------------
+    |
+    | Whether the Control Panel's authentication pages should be enabled,
+    | and where users should be redirected in order to authenticate.
+    |
+    */
+
+    'auth' => [
+        'enabled' => true,
+        'redirect_to' => null,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Start Page
     |--------------------------------------------------------------------------
     |
@@ -38,39 +53,21 @@ return [
     */
 
     'widgets' => [
-        //'getting_started',
-        [ 
-          'type' => 'collection',
-          'collection' => 'projects',
-          'limit' => 10,
-          'title' => 'Projekte',
-          'width' => 50,
-        ], 
-        [ 
-          'type' => 'collection',
-          'collection' => 'team',
-          'limit' => 10,
-          'title' => 'Team',
-          'width' => 50,
-        ], 
+        [
+            'type' => 'collection',
+            'collection' => 'projects',
+            'limit' => 10,
+            'title' => 'Projekte',
+            'width' => 50,
+        ],
+        [
+            'type' => 'collection',
+            'collection' => 'team',
+            'limit' => 10,
+            'title' => 'Team',
+            'width' => 50,
+        ],
     ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Date Format
-    |--------------------------------------------------------------------------
-    |
-    | When a date is encountered throughout the Control Panel, it will be
-    | rendered in the following format unless overridden in specific
-    | fields, and so on. Any PHP date variables are permitted.
-    |
-    | This takes precedence over the date_format in system.php.
-    |
-    | https://www.php.net/manual/en/function.date.php
-    |
-    */
-
-    'date_format' => 'd.m.Y',
 
     /*
     |--------------------------------------------------------------------------
@@ -102,24 +99,11 @@ return [
     | Support Link
     |--------------------------------------------------------------------------
     |
-    | Set the location of the support link in the "Useful Links" header
-    | dropdown. Use 'false' to remove it entirely.
+    | Set the location of the support link in the header.
     |
     */
 
     'support_url' => env('STATAMIC_SUPPORT_URL', 'https://statamic.com/support'),
-
-    /*
-    |--------------------------------------------------------------------------
-    | Theme
-    |--------------------------------------------------------------------------
-    |
-    | Optionally spice up the login and other outside-the-control-panel
-    | screens. You may choose between "rad" or "business" themes.
-    |
-    */
-
-    'theme' => env('STATAMIC_THEME', 'rad'),
 
     /*
     |--------------------------------------------------------------------------
@@ -136,8 +120,38 @@ return [
 
     'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', null),
 
+    'custom_dark_logo_url' => env('STATAMIC_CUSTOM_DARK_LOGO_URL', null),
+
+    'custom_logo_text' => env('STATAMIC_CUSTOM_LOGO_TEXT', null),
+
     'custom_favicon_url' => env('STATAMIC_CUSTOM_FAVICON_URL', null),
 
     'custom_css_url' => env('STATAMIC_CUSTOM_CSS_URL', null),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Default Timezone
+    |--------------------------------------------------------------------------
+    |
+    | Determines the timezone used when displaying and entering dates in the
+    | Control Panel. Can be overridden by individual date fields. Defaults to
+    | "auto" which uses the browser's local timezone.
+    |
+    */
+
+    'default_timezone' => env('STATAMIC_CP_DEFAULT_TIMEZONE', 'auto'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Thumbnails
+    |--------------------------------------------------------------------------
+    |
+    | Here you may define additional CP asset thumbnail presets.
+    |
+    */
+
+    'thumbnail_presets' => [
+        // 'medium' => 800,
+    ],
 
 ];

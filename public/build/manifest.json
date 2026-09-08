@@ -1,31 +1,37 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-bf8c8897.css",
+    "file": "assets/app-DFyxyGs9.css",
+    "name": "app",
+    "names": [
+      "app.css"
+    ],
+    "src": "resources/css/app.css",
     "isEntry": true,
-    "src": "resources/css/app.css"
+    "assets": [
+      "assets/GTEestiProText-Regular-BAlchIiy.eot",
+      "assets/GTEestiProText-Regular-DeacT2tm.woff2",
+      "assets/GTEestiProText-Regular-CpQQbPru.woff"
+    ]
   },
   "resources/css/fonts/GTEestiProText-Regular.eot": {
-    "file": "assets/GTEestiProText-Regular-05fe819f.eot",
+    "file": "assets/GTEestiProText-Regular-BAlchIiy.eot",
     "src": "resources/css/fonts/GTEestiProText-Regular.eot"
   },
   "resources/css/fonts/GTEestiProText-Regular.woff": {
-    "file": "assets/GTEestiProText-Regular-42b9d443.woff",
+    "file": "assets/GTEestiProText-Regular-CpQQbPru.woff",
     "src": "resources/css/fonts/GTEestiProText-Regular.woff"
   },
   "resources/css/fonts/GTEestiProText-Regular.woff2": {
-    "file": "assets/GTEestiProText-Regular-5e0fbc3f.woff2",
+    "file": "assets/GTEestiProText-Regular-DeacT2tm.woff2",
     "src": "resources/css/fonts/GTEestiProText-Regular.woff2"
   },
-  "resources/js/app.css": {
-    "file": "assets/app-d66ac298.css",
-    "src": "resources/js/app.css"
-  },
   "resources/js/app.js": {
-    "css": [
-      "assets/app-d66ac298.css"
-    ],
-    "file": "assets/app-73485205.js",
+    "file": "assets/app-C5B9Y68q.js",
+    "name": "app",
+    "src": "resources/js/app.js",
     "isEntry": true,
-    "src": "resources/js/app.js"
+    "css": [
+      "assets/app-CRpnU1Rm.css"
+    ]
   }
 }
