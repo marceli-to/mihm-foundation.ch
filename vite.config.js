@@ -4,6 +4,11 @@ import vue from '@vitejs/plugin-vue';
 import { resolve } from 'path';
 
 export default defineConfig({
+  server: {
+    cors: {
+      origin: /https?:\/\/.*\.test(:\d+)?$/,
+    },
+  },
   resolve: {
     alias: {
       $img: resolve('resources/img'),
