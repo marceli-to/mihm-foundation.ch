@@ -21,7 +21,7 @@ tabs:
               type: replicator
               display: 'Content elements'
               sets:
-                neue_set-gruppe:
+                elements:
                   display: Elements
                   sets:
                     editor:
@@ -59,29 +59,7 @@ tabs:
         display: SEO
         fields:
           -
-            handle: open_graph_title
-            field:
-              type: text
-              display: Title
-              instructions: 'Can be used as a replacement for the page title'
-              instructions_position: below
-          -
-            handle: open_graph_description
-            field:
-              type: textarea
-              display: Description
-              instructions_position: below
-              instructions: 'One or two descriptive sentences about the content of the page.'
-          -
-            handle: open_graph_image
-            field:
-              max_files: 1
-              container: assets
-              type: assets
-              display: Image
-              instructions_position: below
-              folder: images
-              instructions: 'Image used for sharing on social media.'
+            import: seo
   settings:
     display: Settings
     sections:
@@ -100,17 +78,6 @@ tabs:
               type: select
               display: Theme
               default: rose
-          -
-            handle: template
-            field:
-              type: template
-              display: Template
-              localizable: true
-          -
-            handle: layout
-            field:
-              type: template
-              display: Layout
   sidebar:
     display: Sidebar
     sections:

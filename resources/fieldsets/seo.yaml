@@ -1,0 +1,26 @@
+title: SEO
+fields:
+  -
+    handle: open_graph_title
+    field:
+      type: text
+      display: Title
+      instructions: 'Can be used as a replacement for the page title'
+      instructions_position: below
+  -
+    handle: open_graph_description
+    field:
+      type: textarea
+      display: Description
+      instructions: 'One or two descriptive sentences about the content of the page.'
+      instructions_position: below
+  -
+    handle: open_graph_image
+    field:
+      max_files: 1
+      container: assets
+      folder: images
+      type: assets
+      display: Image
+      instructions: 'Image used for sharing on social media.'
+      instructions_position: below
