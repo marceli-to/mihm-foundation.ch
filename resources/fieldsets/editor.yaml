@@ -60,8 +60,8 @@ fields:
                 -
                   import: banner
             teaser:
-              display: 'Förderung (Preview)'
-              instructions: 'Add a teaser linking to a Förderung area'
+              display: 'Funding Teasers'
+              instructions: 'Add teasers linking to funding areas'
               icon: layout-three-columns
               fields:
                 -
