@@ -58,14 +58,7 @@ return [
             'collection' => 'projects',
             'limit' => 10,
             'title' => 'Projekte',
-            'width' => 50,
-        ],
-        [
-            'type' => 'collection',
-            'collection' => 'team',
-            'limit' => 10,
-            'title' => 'Team',
-            'width' => 50,
+            'width' => 100,
         ],
     ],
 
