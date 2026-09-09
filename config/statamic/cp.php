@@ -55,10 +55,17 @@ return [
     'widgets' => [
         [
             'type' => 'collection',
+            'collection' => 'pages',
+            'limit' => 10,
+            'title' => 'Seiten',
+            'width' => 50,
+        ],
+        [
+            'type' => 'collection',
             'collection' => 'projects',
             'limit' => 10,
             'title' => 'Projekte',
-            'width' => 100,
+            'width' => 50,
         ],
     ],
 
