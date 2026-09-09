@@ -1,10 +1,10 @@
 title: Page
 tabs:
   main:
-    display: Inhalt
+    display: Content
     sections:
       -
-        display: Inhalt
+        display: Content
         fields:
           -
             handle: title
@@ -13,7 +13,7 @@ tabs:
               required: true
               validate:
                 - required
-              display: Titel
+              display: Title
           -
             handle: page_elements
             field:
@@ -22,7 +22,7 @@ tabs:
               display: 'Content elements'
               sets:
                 neue_set-gruppe:
-                  display: 'Neue Set-Gruppe'
+                  display: Elements
                   sets:
                     editor:
                       display: Editor

@@ -1,6 +1,6 @@
 tabs:
   main:
-    display: Hauptteil
+    display: Main
     sections:
       -
         fields:
@@ -9,7 +9,7 @@ tabs:
             field:
               antlers: false
               type: textarea
-              display: Kontaktformular
+              display: 'Contact form'
               icon: textarea
               listable: hidden
               instructions_position: below
@@ -22,7 +22,7 @@ tabs:
             field:
               antlers: false
               type: textarea
-              display: Antragsformular
+              display: 'Application form'
               icon: textarea
               listable: hidden
               instructions_position: below

@@ -12,7 +12,7 @@ fields:
       show_filename: true
       show_set_alt: true
       type: assets
-      display: Bild
+      display: Image
       icon: assets
       listable: hidden
       instructions_position: above
@@ -24,7 +24,7 @@ fields:
     field:
       antlers: false
       type: textarea
-      display: Legende
+      display: Caption
       icon: textarea
       listable: hidden
       instructions_position: above

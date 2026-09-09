@@ -23,14 +23,6 @@
     {{ partial:partials/components/accordion :id="id" }}
   {{ /if }}
 
-  {{ if type == 'downloads' }}
-    {{ partial:partials/components/media_downloads }}
-  {{ /if }}
-
-  {{ if type == 'media_download' }}
-  {{ partial:partials/components/media_article }}
-  {{ /if }}
-
   {{ if type == 'project_teasers' }}
     {{ partial:partials/components/project_teasers }}
   {{ /if }}

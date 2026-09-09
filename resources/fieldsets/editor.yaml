@@ -21,7 +21,7 @@ fields:
       container: assets
       sets:
         elements:
-          display: Elemente
+          display: Elements
           icon: programming-module-box-cube
           sets:
             accordion:
@@ -60,26 +60,12 @@ fields:
                 -
                   import: banner
             teaser:
-              display: 'Teaser Förderung'
-              instructions: 'Add a rounded teaser (Förderung)'
+              display: 'Förderung (Preview)'
+              instructions: 'Add a teaser linking to a Förderung area'
               icon: layout-three-columns
               fields:
                 -
                   import: teaser
-            downloads:
-              display: 'Media Download'
-              instructions: 'Add a downloadable file'
-              icon: layout-grid-dots
-              fields:
-                -
-                  import: downloads
-            media_download:
-              display: 'Media Article'
-              instructions: 'Add a media article / link'
-              icon: download-arrow-down
-              fields:
-                -
-                  import: media_download
             project_teasers:
               display: 'Project Teasers'
               instructions: 'Add a project teaser'
