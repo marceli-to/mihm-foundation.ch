@@ -19,6 +19,7 @@ fields:
       type: bard
       display: Content
       container: assets
+      collapse: true
       sets:
         elements:
           display: Elements
@@ -48,7 +49,7 @@ fields:
             team:
               display: Team
               instructions: 'Add a group of team members'
-              icon: user-multiple
+              icon: add-user
               fields:
                 -
                   import: team
