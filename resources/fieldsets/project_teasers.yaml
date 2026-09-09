@@ -3,27 +3,44 @@ fields:
   -
     handle: projects
     field:
-      collapse: false
-      previews: true
-      fullscreen: true
-      sets:
-        project:
-          display: Project
-          instructions: null
-          icon: null
-          sets:
-            project:
-              display: Project
-              instructions: 'Add a project'
-              icon: text-formatting-image-top
-              fields:
-                -
-                  import: project_teaser
-      type: replicator
+      type: grid
       display: Projects
-      icon: replicator
+      icon: grid
+      mode: stacked
+      add_row: 'Add project'
+      reorderable: true
       listable: hidden
       instructions_position: above
       visibility: visible
       replicator_preview: true
       hide_display: false
+      fields:
+        -
+          handle: project
+          field:
+            max_items: 1
+            mode: default
+            create: true
+            collections:
+              - projects
+            type: entries
+            display: Project
+            icon: entries
+            instructions_position: above
+        -
+          handle: layout
+          field:
+            options:
+              narrow: Narrow
+              wide: Wide
+            taggable: false
+            push_tags: false
+            multiple: false
+            clearable: false
+            searchable: true
+            cast_booleans: false
+            default: wide
+            type: select
+            display: Layout
+            icon: select
+            instructions_position: above
